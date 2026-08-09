@@ -3,16 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pluvion — Monitoramento e alerta de enchentes em tempo real</title>
+  <title>Pluvion</title>
   <meta name="description" content="Pluvion conecta sensores instalados em bueiros e áreas de risco a alertas personalizados por rua, bairro e cidade — para a população se antecipar e para órgãos públicos decidirem com dados." />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Pluvion — A leitura do risco, na altura do olhar." />
   <meta property="og:description" content="Monitoramento e alerta de enchentes e alagamentos em tempo real, do sensor ao alerta." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/general/og-image.png" />
-
-  <link rel="icon" type="image/svg+xml" href="images/general/favicon.svg" />
+  <link rel="icon" href="images/general/logo-contorno.svg" />
 
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,7 +42,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="#" class="brand" aria-label="Pluvion — página inicial">
-        <img class="brand__mark" src="images/general/logo-mark.svg" alt="" width="26" height="26" />
+        <img class="brand__mark" src="images/general/logo.svg"/>
         Pluvion
       </a>
 
@@ -92,19 +90,12 @@
           <div class="status-card">
             <div class="status-card__top">
               <span class="status-card__label">Status da região</span>
-              <span class="status-card__level">Sem risco</span>
+              <span class="status-card__level">SEM RISCO</span>
               <span class="status-card__meta">
                 <span class="status-card__dot"></span>
                 Nível baixo: 0,31 m · Atualizado há 4 min
               </span>
             </div>
-            <div class="status-card__gauge">
-              <div class="status-card__gauge-fill" data-level="22%"></div>
-              <div class="status-card__gauge-scale">
-                <span>4 m</span>
-                <span>2 m</span>
-                <span>0 m</span>
-              </div>
             </div>
           </div>
         </div>
@@ -120,18 +111,22 @@
         </div>
 
         <div class="problema__grid">
+
           <article class="problema__card reveal">
             <h3>Chuvas cada vez mais intensas</h3>
             <p>Eventos climáticos extremos são mais frequentes e imprevisíveis, exigindo respostas mais rápidas do que os modelos tradicionais de monitoramento conseguem oferecer.</p>
           </article>
+
           <article class="problema__card reveal">
             <h3>Falta de dados em tempo real</h3>
             <p>Grande parte das áreas de risco ainda não possui monitoramento contínuo do nível da água, o que atrasa a percepção do problema.</p>
           </article>
+
           <article class="problema__card reveal">
             <h3>Alertas genéricos e tardios</h3>
             <p>Avisos amplos, sem recorte por rua ou bairro, dificultam a decisão individual no momento em que ela mais importa.</p>
           </article>
+
         </div>
 
         <!-- ---- Carrossel de notícias ---- -->
@@ -213,63 +208,89 @@
 
         <div class="pesquisa__stats reveal">
           <div class="card stat-card">
-            <div class="stat-card__value">—</div>
-            <p class="stat-card__label">Pessoas entrevistadas <br><span class="field-hint">(SUBSTITUIR)</span></p>
+            <div class="stat-card__value">206</div>
+            <p class="stat-card__label">Pessoas entrevistadas <br><span class="field-hint">2026</span></p>
           </div>
           <div class="card stat-card">
-            <div class="stat-card__value">—</div>
-            <p class="stat-card__label">Regiões visitadas <br><span class="field-hint">(SUBSTITUIR)</span></p>
+            <div class="stat-card__value">7</div>
+            <p class="stat-card__label">Regiões participantes <br><span class="field-hint">2026</span></p>
           </div>
           <div class="card stat-card">
-            <div class="stat-card__value">—</div>
-            <p class="stat-card__label">Relatam alagamento recorrente <br><span class="field-hint">(SUBSTITUIR)</span></p>
+            <div class="stat-card__value">66%</div>
+            <p class="stat-card__label">Relatam alagamento recorrente <br><span class="field-hint">2026</span></p>
           </div>
         </div>
 
         <div class="charts-grid">
+
           <article class="card chart-card reveal">
             <div class="chart-card__head">
               <h3>Frequência de alagamentos relatada</h3>
-              <span class="chart-card__source">Fonte — pesquisa de campo (dados de exemplo)</span>
+              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
             </div>
             <div class="chart-card__canvas-wrap">
-              <canvas data-chart="bar" data-dataset="frequenciaAlagamentos" data-label="Respondentes (%)" role="img" aria-label="Gráfico de barras mostrando a frequência de alagamentos relatada pelos moradores entrevistados"></canvas>
+              <canvas data-chart="bar" data-dataset="frequenciaAlagamentos" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de barras mostrando a frequência de alagamentos relatada pelos moradores entrevistados"></canvas>
             </div>
-            <p class="chart-card__interpretation">A maior parte dos respondentes relata alagamentos frequentes na própria região, reforçando a necessidade de monitoramento contínuo.</p>
+            <p class="chart-card__interpretation">A maior parte dos respondentes relata sofrer com alagamentos na própria região, reforçando a necessidade de monitoramento contínuo.</p>
           </article>
 
           <article class="card chart-card reveal">
             <div class="chart-card__head">
-              <h3>Como o risco costuma ser percebido</h3>
-              <span class="chart-card__source">Fonte — pesquisa de campo (dados de exemplo)</span>
+              <h3>Você costuma receber aviso antecipado de risco de enchente? </h3>
+              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
             </div>
             <div class="chart-card__canvas-wrap">
-              <canvas data-chart="doughnut" data-dataset="tempoPercepcaoRisco" data-label="Respondentes (%)" role="img" aria-label="Gráfico de rosca mostrando em que momento os moradores costumam perceber o risco de alagamento"></canvas>
+              <canvas data-chart="doughnut" data-dataset="tempoPercepcaoRisco" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de rosca mostrando se os entrevistadoscostumam receber avisos antecipados de risco de enchente"></canvas>
             </div>
-            <p class="chart-card__interpretation">Boa parte dos moradores só percebe o risco quando a água já está na rua ou dentro do imóvel — exatamente o intervalo que um alerta antecipado busca reduzir.</p>
+            <p class="chart-card__interpretation">Metade dos moradores só recebe o aviso quando a água já está na rua ou dentro do imóvel — exatamente o intervalo que um alerta antecipado busca reduzir.</p>
           </article>
 
           <article class="card chart-card reveal">
             <div class="chart-card__head">
-              <h3>Fontes de informação usadas hoje</h3>
-              <span class="chart-card__source">Fonte — pesquisa de campo (dados de exemplo)</span>
+              <h3>O sistema de drenagem da sua cidade funciona adequadamente? 
+              </h3>
+              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
             </div>
             <div class="chart-card__canvas-wrap">
-              <canvas data-chart="bar" data-dataset="fonteInformacao" data-label="Respondentes (%)" role="img" aria-label="Gráfico de barras mostrando as fontes de informação usadas atualmente sobre risco de alagamento"></canvas>
+              <canvas data-chart="doughnut" data-dataset="sistemaDrenagem" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de rosca mostrando a percepção dos moradores sobre o funcionamento do sistema de drenagem"></canvas>
             </div>
-            <p class="chart-card__interpretation">Vizinhos e redes sociais são hoje as principais fontes de aviso — informais e sujeitas a atraso ou imprecisão.</p>
+            <p class="chart-card__interpretation">O mal funcionamento do sistema de drenagem é uma preocupação significativa para a maioria dos moradores, além de ser um agravante para enchentes.</p>
           </article>
 
           <article class="card chart-card reveal">
             <div class="chart-card__head">
-              <h3>Evolução dos relatos ao longo da pesquisa</h3>
-              <span class="chart-card__source">Fonte — pesquisa de campo (dados de exemplo)</span>
+              <h3>As enchentes já causaram algum tipo de prejuízo na comunidade?</h3>
+              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
             </div>
             <div class="chart-card__canvas-wrap">
-              <canvas data-chart="line" data-dataset="frequenciaAlagamentos" data-label="Relatos acumulados" role="img" aria-label="Gráfico de linha ilustrando a evolução dos relatos coletados durante a pesquisa"></canvas>
+              <canvas data-chart="bar" data-dataset="prejuizoComunidade" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de barras mostrando as fontes de informação usadas atualmente sobre prejuízos causados por enchentes"></canvas>
             </div>
-            <p class="chart-card__interpretation">Estrutura pronta para receber a série real coletada ao longo do período de campo.</p>
+            <p class="chart-card__interpretation">Por causa de situações como essa, nasce a proposta do Pluvion, de trazer acessibilidade e velocidade, priozando sempre a segurança.</p>
           </article>
+
+          <article class="card chart-card reveal">
+            <div class="chart-card__head">
+              <h3>Residentes por Região</h3>
+              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
+            </div>
+            <div class="chart-card__canvas-wrap">
+              <canvas data-chart="bar" data-dataset="residentesRegiao" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de barras mostrando o número de residentes por região"></canvas>
+            </div>
+            <p class="chart-card__interpretation">Esses dados representam uma pequena parcela do que representa um estado inteiro, e até mesmo uma nação toda que sofre com o problema.</p>
+          </article>
+
+          <article class="card chart-card reveal">
+            <div class="chart-card__head">
+              <h3>Você acredita que o SEA (Sistema de Alerta de Enchentes) evitaria prejuízos e riscos à população?</h3>
+              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
+            </div>
+            <div class="chart-card__canvas-wrap">
+              <canvas data-chart="doughnut" data-dataset="seaEvitariaPrejuizos" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de rosca mostrando a percepção dos moradores sobre a eficácia do SEA em evitar prejuízos e riscos"></canvas>
+            </div>
+            <p class="chart-card__interpretation">É nitida a necessidade que a população tem de encotrar uma solução eficaz para mitigar os riscos associados às enchentes, e o SEA pode ser uma solução promissora.</p>
+          </article>
+
+
         </div>
       </div>
     </section>

@@ -8,17 +8,30 @@
 // SUBSTITUIR PELOS DADOS REAIS DA PESQUISA DE CAMPO
 const researchData = {
   frequenciaAlagamentos: {
-    labels: ['Nunca', 'Raramente', 'Às vezes', 'Frequentemente', 'Sempre que chove forte'],
+    labels: ['Nunca', 'Raramente', 'Às vezes', 'Frequentemente', 'Sempre'],
     values: [4, 12, 28, 34, 22],
   },
   tempoPercepcaoRisco: {
-    labels: ['Água já na rua', 'Água no imóvel', 'Alerta oficial', 'Não percebe a tempo'],
-    values: [38, 21, 17, 24],
+    labels: ['Sim', 'Não'],
+    values: [50.8, 49.2],
   },
-  fonteInformacao: {
-    labels: ['Vizinhos', 'Redes sociais', 'Rádio/TV', 'Órgãos públicos', 'Nenhuma'],
-    values: [30, 27, 18, 15, 10],
+  sistemaDrenagem: {
+    labels: ['Sim', 'Não', 'Não Sei'],
+    values: [15.9, 74.6, 9.5],
   },
+prejuizoComunidade: {
+    labels: ['Sim, muitos', 'Sim, alguns', 'Não'],
+    values: [10, 30, 60],
+  },
+  residentesRegiao: {
+    labels: ['São Paulo', 'Taboão da Serra', 'Embu das Artes', 'Itapecerica da Serra', 'Outros'],
+    values: [27.7, 58.7, 4, 2.8, 6.8],
+  },
+  seaEvitariaPrejuizos: {
+    labels: ['Sim', 'Não'],
+    values: [93.7, 6.3],
+  }
+  
 };
 
 const CHART_COLORS = ['#527D93', '#279C6B', '#E7A93D', '#E2672C', '#C31F3D'];
@@ -53,7 +66,7 @@ async function loadChartJs() {
   if (window.Chart) return window.Chart;
   await new Promise((resolve, reject) => {
     const script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js';
+    script.src = 'js/vendor/chart.umd.min.js';
     script.onload = resolve;
     script.onerror = reject;
     document.head.appendChild(script);

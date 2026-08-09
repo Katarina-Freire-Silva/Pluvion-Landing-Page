@@ -37,11 +37,12 @@
 .status-card {
   position: relative;
   border-radius: var(--radius-lg);
+  font-family: "Josefin Sans", sans-serif;
   padding: var(--space-lg);
   min-height: 320px;
   color: #fff;
   background: linear-gradient(165deg, var(--color-accent-green-start) 0%, var(--color-accent-green-end) 100%);
-  box-shadow: var(--shadow-card-dark);
+  box-shadow: var(--shadow-lg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -66,7 +67,6 @@
 }
 
 .status-card__label {
-  font-family: var(--font-mono);
   font-size: var(--fs-eyebrow);
   letter-spacing: var(--tracking-eyebrow);
   text-transform: uppercase;
@@ -74,13 +74,11 @@
 }
 
 .status-card__level {
-  font-family: var(--font-display);
-  font-size: var(--fs-2xl);
-  font-weight: 700;
+  font-size: var(--fs-4xl);
+  font-weight: 400;
 }
 
 .status-card__meta {
-  font-family: var(--font-mono);
   font-size: var(--fs-sm);
   color: rgba(255, 255, 255, 0.82);
   display: flex;
@@ -100,39 +98,6 @@
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.35; }
-}
-
-/* Barra de nível de água — elemento assinatura do Hero */
-.status-card__gauge {
-  position: relative;
-  height: 64px;
-  border-radius: var(--radius-sm);
-  background: rgba(0, 0, 0, 0.18);
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-}
-
-.status-card__gauge-fill {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 22%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.18));
-  border-top: 2px solid rgba(255, 255, 255, 0.6);
-  transition: height 1.4s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.status-card__gauge-scale {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 6px 10px;
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  color: rgba(255, 255, 255, 0.55);
 }
 
 @media (prefers-reduced-motion: reduce) {

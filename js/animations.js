@@ -30,19 +30,5 @@ export function initAnimations() {
     observer.observe(el);
   });
 
-  animateHeroGauge();
 }
 
-/**
- * Anima a barra de nível do card de status do Hero, com um valor
- * ilustrativo. É uma representação visual, não uma leitura real.
- */
-function animateHeroGauge() {
-  const fill = document.querySelector('.status-card__gauge-fill');
-  if (!fill) return;
-
-  const targetHeight = fill.dataset.level || '22%';
-  requestAnimationFrame(() => {
-    fill.style.height = targetHeight;
-  });
-}
