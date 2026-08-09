@@ -37,12 +37,13 @@
 }
 
 .risk-card--1 { background: var(--risk-1); }
-.risk-card--2 { background: var(--risk-2); color: #402c04; }
+.risk-card--2 { background: var(--risk-2);   color: #fff; }
 .risk-card--3 { background: var(--risk-3); }
 .risk-card--4 { background: var(--risk-4); }
 
 .risk-card__level {
-  font-family: var(--font-mono);
+  font-family: "Josefin Sans", sans-serif;
+    color: #fff;
   font-size: 0.72rem;
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
@@ -50,7 +51,8 @@
 }
 
 .risk-card__title {
-  font-family: var(--font-display);
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
   font-size: var(--fs-lg);
   font-weight: 700;
   margin-block: var(--space-2xs);
@@ -58,6 +60,7 @@
 
 .risk-card__desc {
   font-size: var(--fs-sm);
+  color: #fff;
   opacity: 0.92;
 }
 

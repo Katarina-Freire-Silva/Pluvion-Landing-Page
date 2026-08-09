@@ -5,7 +5,7 @@
 
 :root {
   /* ---- Cor: marca ---- */
-  --color-primary: #527D93;        /* botão CTA principal, links de destaque */
+  --color-primary: #396A83;        /* botão CTA principal, links de destaque */
   --color-primary-dark: #3E6883;   /* hover / estados ativos */
   --color-steel: #396A83;          /* fundo da seção "O problema" */
   --color-steel-deep: #294759;     /* cards sobre fundo steel */

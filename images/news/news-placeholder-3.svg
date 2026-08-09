@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300">
-  <rect width="480" height="300" fill="#294759"/>
-  <path d="M0 210 Q120 170 240 205 T480 195 V300 H0 Z" fill="#396A83"/>
-  <path d="M0 250 Q120 220 240 245 T480 235 V300 H0 Z" fill="#3E6883"/>
-  <text x="240" y="150" text-anchor="middle" font-family="monospace" font-size="13" fill="#C9D3D7">IMAGEM DE NOTÍCIA — SUBSTITUIR</text>
-</svg>
