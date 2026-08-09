@@ -23,14 +23,14 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-md);
-  padding-block: var(--space-sm);
+  padding-block: var(--space-md);
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: var(--space-2xs);
-  font-family: var(--font-display);
+  font-family: "Josefin Sans", sans-serif;
   font-size: var(--fs-lg);
   font-weight: 700;
   color: var(--color-text);
