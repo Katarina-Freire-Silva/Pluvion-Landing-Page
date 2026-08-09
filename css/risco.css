@@ -1,0 +1,79 @@
+/* ==========================================================================
+   ESCALA DE RISCO
+   ========================================================================== */
+
+.risco {
+  padding-block: var(--space-2xl);
+  text-align: center;
+}
+
+.risco .section-head {
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
+  max-width: 40rem;
+}
+
+.risk-levels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+  text-align: left;
+}
+
+.risk-card {
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  color: #fff;
+  min-height: 148px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--transition-base);
+}
+
+.risk-card:hover {
+  transform: translateY(-4px);
+}
+
+.risk-card--1 { background: var(--risk-1); }
+.risk-card--2 { background: var(--risk-2); color: #402c04; }
+.risk-card--3 { background: var(--risk-3); }
+.risk-card--4 { background: var(--risk-4); }
+
+.risk-card__level {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.risk-card__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  margin-block: var(--space-2xs);
+}
+
+.risk-card__desc {
+  font-size: var(--fs-sm);
+  opacity: 0.92;
+}
+
+.risk-card--2 .risk-card__desc,
+.risk-card--2 .risk-card__level {
+  opacity: 0.75;
+}
+
+@media (max-width: 900px) {
+  .risk-levels {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .risk-levels {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,148 @@
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+
+.hero {
+  padding-block: var(--space-2xl) var(--space-2xl);
+  overflow: hidden;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.hero__eyebrow {
+  margin-bottom: var(--space-sm);
+}
+
+.hero__title {
+  margin-bottom: var(--space-md);
+}
+
+.hero__lead {
+  max-width: 34rem;
+  margin-bottom: var(--space-lg);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+/* ---- Card de status (representação visual, não conectado a dispositivo real) ---- */
+.status-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  min-height: 320px;
+  color: #fff;
+  background: linear-gradient(165deg, var(--color-accent-green-start) 0%, var(--color-accent-green-end) 100%);
+  box-shadow: var(--shadow-card-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  isolation: isolate;
+}
+
+.status-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(120% 90% at 90% -10%, rgba(255, 255, 255, 0.16), transparent 60%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.status-card__top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.status-card__label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.status-card__level {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+}
+
+.status-card__meta {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: rgba(255, 255, 255, 0.82);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  flex-wrap: wrap;
+}
+
+.status-card__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  animation: pulse-dot 2.2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+/* Barra de nível de água — elemento assinatura do Hero */
+.status-card__gauge {
+  position: relative;
+  height: 64px;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.status-card__gauge-fill {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 22%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.18));
+  border-top: 2px solid rgba(255, 255, 255, 0.6);
+  transition: height 1.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.status-card__gauge-scale {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-card__dot {
+    animation: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,113 @@
+/* ==========================================================================
+   PLUVION — DESIGN TOKENS
+   Fonte da verdade para cores, tipografia, espaçamento e demais tokens.
+   ========================================================================== */
+
+:root {
+  /* ---- Cor: marca ---- */
+  --color-primary: #527D93;        /* botão CTA principal, links de destaque */
+  --color-primary-dark: #3E6883;   /* hover / estados ativos */
+  --color-steel: #396A83;          /* fundo da seção "O problema" */
+  --color-steel-deep: #294759;     /* cards sobre fundo steel */
+
+  --color-accent-green-start: #249264;  /* gradiente do card "status da região" */
+  --color-accent-green-end: #10402C;
+
+  --color-navy: #1C303D;           /* fundo institucional / footer */
+  --color-navy-deep: #131F28;
+
+  /* ---- Cor: neutros / superfícies ---- */
+  --color-background: #FBFCFC;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F3F6F7;
+  --color-border: #E2E8EB;
+  --color-border-strong: #C9D3D7;
+
+  /* ---- Cor: texto ---- */
+  --color-text: #16232B;
+  --color-text-soft: #3E4C53;
+  --color-muted: #6E7C82;
+  --color-muted-on-dark: rgba(255, 255, 255, 0.68);
+  --color-on-dark: #F4F8F9;
+
+  /* ---- Cor: estado ---- */
+  --color-success: #279C6B;
+  --color-warning: #E7A93D;
+  --color-alert: #E2672C;
+  --color-danger: #C31F3D;
+
+  /* ---- Escala de risco (não misturar com estados genéricos) ---- */
+  --risk-1: #279C6B;
+  --risk-1-bg: #E7F5EE;
+  --risk-2: #E7A93D;
+  --risk-2-bg: #FCF3E3;
+  --risk-3: #E2672C;
+  --risk-3-bg: #FDEEE6;
+  --risk-4: #C31F3D;
+  --risk-4-bg: #FBE7EA;
+
+  /* ---- Tipografia ---- */
+  --font-display: "Baloo 2", "Quicksand", sans-serif;
+  --font-body: "Inter", -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Space Mono", monospace;
+
+  --fs-eyebrow: 0.72rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+  --fs-3xl: 3rem;
+  --fs-4xl: 3.75rem;
+
+  --lh-tight: 1.1;
+  --lh-snug: 1.35;
+  --lh-normal: 1.6;
+
+  --tracking-eyebrow: 0.14em;
+  --tracking-wide: 0.04em;
+
+  /* ---- Espaçamento ---- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+
+  /* ---- Layout ---- */
+  --container-width: 1240px;
+  --container-padding: 1.5rem;
+
+  /* ---- Raios ---- */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* ---- Sombras ---- */
+  --shadow-sm: 0 2px 8px rgba(22, 35, 43, 0.06);
+  --shadow-md: 0 12px 32px rgba(22, 35, 43, 0.10);
+  --shadow-lg: 0 24px 60px rgba(22, 35, 43, 0.16);
+  --shadow-card-dark: 0 20px 50px rgba(9, 20, 26, 0.35);
+
+  /* ---- Transições ---- */
+  --transition-fast: 150ms ease;
+  --transition-base: 260ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  --transition-slow: 480ms cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* ---- Breakpoints (referência — usados via media query, não var()) ---- */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1080px;
+  --bp-xl: 1280px;
+
+  /* ---- Camadas ---- */
+  --z-header: 100;
+  --z-menu: 200;
+  --z-modal: 300;
+}

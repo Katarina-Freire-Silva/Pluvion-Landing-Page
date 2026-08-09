@@ -1,0 +1,99 @@
+/* ==========================================================================
+   TIPOGRAFIA
+   ========================================================================== */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: var(--lh-tight);
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.section-title {
+  font-size: var(--fs-2xl);
+  max-width: 46rem;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 4.5vw, var(--fs-4xl));
+}
+
+h3 {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: var(--fs-md);
+  font-weight: 600;
+}
+
+p {
+  color: var(--color-muted);
+  line-height: var(--lh-normal);
+}
+
+.lead {
+  font-size: var(--fs-md);
+  line-height: var(--lh-snug);
+}
+
+/* Eyebrow — pequeno rótulo em caixa alta, usado como identificador de seção */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.eyebrow--on-dark {
+  color: var(--color-muted-on-dark);
+}
+
+.eyebrow--on-steel {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.mono-figure {
+  font-family: var(--font-mono);
+}
+
+.text-on-dark {
+  color: var(--color-on-dark);
+}
+
+.text-on-dark p,
+.text-on-dark .muted-on-dark {
+  color: var(--color-muted-on-dark);
+}
+
+strong {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.text-on-dark strong {
+  color: var(--color-on-dark);
+}
