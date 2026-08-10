@@ -1,10 +1,18 @@
 <div align="center">
 
 
-<div align="center">
-    <img src="images/general/logo.svg" alt="Logo Pluvion" width="80" align="middle" style="margin-right: 100px;">
-    <img src="images/general/Pluvion.svg" alt="Logo Pluvion" width="400" align="middle">
-</div>
+<table align="center">
+  <tr>
+    <td>
+      <img src="images/general/logo.svg" alt="Logo Pluvion" width="75">
+    </td>
+    <td width="30"></td>
+    <td>
+      <img src="images/general/Pluvion.svg" alt="Logo Pluvion" width="400">
+    </td>
+  </tr>
+</table>
+
 <br>
 
 **Sistema de Alerta de Enchentes — SAE**
