@@ -89,7 +89,7 @@ O conjunto permite que o dispositivo seja utilizado como parte de uma solução 
 
 ## 📰 Enchentes e Alagamentos na Sociedade
 
-A Landing Page apresenta a problemática por meio de um **carrossel de notícias e imagens**, reunindo registros jornalísticos relacionados a enchentes e alagamentos.
+A Landing Page apresenta a problemática reunindo registros jornalísticos relacionados a enchentes e alagamentos.
 
 Essa seção tem como objetivo aproximar o visitante da realidade do problema, demonstrando que os acontecimentos abordados pelo projeto fazem parte de uma situação concreta e recorrente.
 
@@ -113,15 +113,11 @@ A seção conta com:
 * Dados da pesquisa;
 * Elementos visuais para facilitar a interpretação.
 
-Os gráficos fazem parte da própria página e não são imagens estáticas, permitindo uma apresentação mais dinâmica dos dados.
-
 ---
 
 ## 👥 Conheça os Criadores
 
-Ao final da Landing Page, o visitante encontra uma seção dedicada à equipe responsável pelo desenvolvimento do projeto.
-
-Os cinco integrantes são apresentados horizontalmente, cada um com seu próprio espaço contendo:
+Ao final da Landing Page, o visitante encontra uma seção dedicada à equipe responsável pelo desenvolvimento do projeto, contendo:
 
 * Foto;
 * Nome;
@@ -134,19 +130,19 @@ A seção foi desenvolvida para apresentar não apenas a solução criada, mas t
 ### Integrantes
 
 **Katarina Freire Silva**
-Desenvolvimento e projeto
+Desenvolvimento do Frontend e do Backend
 
 **Luis Felipe Novais Conrado**
-Desenvolvimento e projeto
+Desenvolvimento do Design
 
 **Manuela Teixeira de Oliveira**
-Desenvolvimento e projeto
+Desenvolvimento da Monografia e audiovisual
 
 **Rodrigo Ramos Ribeiro**
-Desenvolvimento e projeto
+Desenvolvimento di dispositivo SAE
 
 **Sarah da Conceição Lamas Bento**
-Desenvolvimento e projeto
+Desenvolvimento da Monografia e audiovisual
 
 ---
 
@@ -160,7 +156,7 @@ Espaço reservado para o **vídeo Pitch do Pluvion**, apresentando a problemáti
 
 ### 📄 Monografia
 
-Também está disponível um botão para acesso e download da **monografia desenvolvida pela equipe**, reunindo o conteúdo acadêmico e técnico relacionado ao projeto.
+Também está disponível o download da **monografia desenvolvida pela equipe**, reunindo o conteúdo acadêmico e técnico relacionado ao projeto.
 
 ---
 
@@ -173,10 +169,6 @@ Nessa seção, o visitante interessado poderá fornecer informações para demon
 As informações enviadas são integradas ao sistema desenvolvido com **Firebase**, permitindo o processamento da solicitação.
 
 Após a análise da solicitação, o sistema poderá enviar uma comunicação ao usuário informando o resultado do processo.
-
-Em um cenário de aprovação, o usuário poderá receber uma mensagem informando que sua solicitação foi aprovada e orientando-o sobre os próximos passos para retirada do SAE em um ponto de atendimento ou loja disponível.
-
-Essa etapa representa a integração entre a Landing Page e a infraestrutura de backend do projeto.
 
 ---
 
@@ -240,10 +232,6 @@ A Landing Page foi desenvolvida como uma **Single Page**, ou seja, todo o conte�
 
 Os elementos disponíveis no Header funcionam como links internos que levam o visitante diretamente às respectivas seções.
 
-A estrutura contempla, de maneira geral:
-
-**Início → Problemática → Solução → Pesquisa → Equipe → Projeto → Solicitação → Footer**
-
 Dessa maneira, o visitante consegue percorrer toda a apresentação do Pluvion sem precisar navegar entre diversas páginas diferentes.
 
 ---
@@ -282,8 +270,8 @@ Pluvion-Landing-Page/
 │   ├── reset.css
 │   ├── typography.css
 │   ├── variables.css
-│   ├── components.css
-│   └── sections/
+│   ├── responsive.css
+│   └── ...
 │
 ├── js/
 │   ├── charts.js
@@ -292,9 +280,9 @@ Pluvion-Landing-Page/
 │   └── ...
 │
 ├── images/
-│   ├── logo-pluvion.png
-│   ├── noticias/
-│   ├── equipe/
+│   ├── device/
+│   ├── general/
+│   ├── creators/
 │   └── ...
 │
 └── README.md
@@ -308,7 +296,7 @@ Essa organização facilita a manutenção, evolução e compreensão do projeto
 
 ### 🔗 Acesse a Landing Page
 
-**https://katarina-freire-silva.github.io/Pluvion-Landing-Page/**
+[🌐 **Acessar a Landing Page do Pluvion**](https://katarina-freire-silva.github.io/Pluvion-Landing-Page/)
 
 O site apresenta a proposta completa do Pluvion, desde a problemática das enchentes e alagamentos até a solução desenvolvida pela equipe.
 
@@ -318,9 +306,7 @@ O site apresenta a proposta completa do Pluvion, desde a problemática das enche
 
 O projeto está disponível no GitHub, contendo os arquivos utilizados para desenvolvimento da Landing Page.
 
-**GitHub:**
-
-https://github.com/katarina-freire-silva/Pluvion-Landing-Page
+[💻 **Acessar o Repositório no GitHub**](https://github.com/katarina-freire-silva/Pluvion-Landing-Page)
 
 ---
 
@@ -348,7 +334,7 @@ O projeto busca demonstrar como diferentes tecnologias podem ser integradas para
 
 ## 🌧️ Pluvion
 
-### Tecnologia para transformar dados em prevenção.
+### Antecipar para proteger.
 
 O Pluvion representa a união entre **tecnologia, informação e prevenção**, buscando desenvolver uma solução que possa contribuir para o monitoramento de enchentes e alagamentos.
 
