@@ -42,7 +42,7 @@
 }
 
 .creator-card__role {
-  font-family: var(--font-mono);
+  font-family: "Josefin Sans", sans-serif;
   font-size: 0.72rem;
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;

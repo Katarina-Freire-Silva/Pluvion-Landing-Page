@@ -33,7 +33,7 @@
   gap: var(--space-sm);
 }
 
-/* ---- Card de status (representação visual, não conectado a dispositivo real) ---- */
+/* ---- Card de status (representação visual) ---- */
 .status-card {
   position: relative;
   border-radius: var(--radius-lg);

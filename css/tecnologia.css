@@ -42,7 +42,7 @@
 }
 
 .device-reading__label {
-  font-family: var(--font-mono);
+  font-family: "Josefin Sans", sans-serif;
   font-size: 0.7rem;
   letter-spacing: var(--tracking-wide);
   color: rgba(255, 255, 255, 0.65);
@@ -50,7 +50,7 @@
 }
 
 .device-reading__value {
-  font-family: var(--font-display);
+  font-family: "Josefin Sans", sans-serif;
   font-size: var(--fs-xl);
   font-weight: 700;
   display: flex;
@@ -85,7 +85,7 @@
 }
 
 .spec-item__label {
-  font-family: var(--font-mono);
+  font-family: "Josefin Sans", sans-serif;
   font-size: 0.7rem;
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;

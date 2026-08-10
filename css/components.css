@@ -28,7 +28,7 @@
   gap: var(--space-2xs);
   padding: 0.85rem 1.6rem;
   border-radius: var(--radius-pill);
-  font-family: var(--font-body);
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   font-size: var(--fs-sm);
   white-space: nowrap;
@@ -136,7 +136,7 @@
   gap: 0.4em;
   padding: 0.3rem 0.75rem;
   border-radius: var(--radius-pill);
-  font-family: var(--font-mono);
+  font-family: "Josefin Sans", sans-serif;
   font-size: 0.7rem;
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
@@ -152,7 +152,7 @@
 
 /* ---- Números de passo / índice ---- */
 .step-index {
-  font-family: var(--font-mono);
+  font-family: "Josefin Sans", sans-serif;
   font-size: var(--fs-sm);
   color: var(--color-primary);
   font-weight: 700;
@@ -295,7 +295,7 @@
   }
 }
 
-/* ---- Placeholder visual (imagens/vídeo/dados ainda não definitivos) ---- */
+/* ---- Placeholder visual (imagens/vídeo) ---- */
 .placeholder-box {
   display: flex;
   flex-direction: column;
@@ -311,7 +311,7 @@
 }
 
 .placeholder-box span {
-  font-family: var(--font-mono);
+  font-family: "Josefin Sans", sans-serif;
   font-size: 0.7rem;
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;

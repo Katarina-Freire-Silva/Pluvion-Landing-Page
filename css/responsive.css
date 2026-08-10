@@ -18,8 +18,17 @@
 @media (max-width: 900px) {
   .main-nav {
     position: fixed;
-    inset: 64px 0 0 0;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100vh - 64px);
+    background-color: #FBFCFC; /* fallback opaco */
     background: var(--color-background);
+    box-shadow: var(--shadow-lg);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     z-index: var(--z-menu);
     padding: var(--space-lg) var(--container-padding);
     transform: translateY(-8px);
@@ -39,6 +48,7 @@
   .main-nav__list {
     flex-direction: column;
     align-items: flex-start;
+    background: var(--color-background);
     gap: var(--space-md);
   }
 
