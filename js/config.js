@@ -1,9 +1,6 @@
 /**
  * config.js
  * Configurações centrais do projeto Pluvion.
- * Nenhuma credencial privada deve ser colocada aqui — apenas o endpoint
- * público de entrada, que por sua vez é responsável por validar e
- * encaminhar a solicitação ao backend (Cloud Function).
  */
 
 export const PLUVION_CONFIG = {
@@ -15,7 +12,7 @@ export const PLUVION_CONFIG = {
   environment: 'development',
 
   // Tempo (ms) de rotação automática do carrossel de notícias.
-  carouselAutoplayInterval: 6000,
+  carouselAutoplayInterval: 9000,
 
   // Caminho configurável para a monografia — SUBSTITUIR pelo PDF definitivo.
   monographUrl: 'https://drive.google.com/uc?export=download&id=1PMpwtRQvRNUx0hpPj3uCVZ_VY9FQH76w',
