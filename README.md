@@ -7,7 +7,7 @@
 
 <br>
 
-**Sistema de Alerta de Enchentes e Alagamentos — SAE**
+**Sistema de Alerta de Enchentes — SAE**
 
 </div>
 
@@ -31,7 +31,7 @@ O projeto une **hardware, software, comunicação de dados e informação** para
 
 Dentro do projeto, o dispositivo físico responsável pelo monitoramento é denominado:
 
-> **SAE — Sistema de Alerta de Enchentes e Alagamentos**
+> **SAE — Sistema de Alerta de Enchentes**
 
 O SAE representa a parte física da solução Pluvion, enquanto a plataforma digital e os demais componentes do sistema trabalham em conjunto para transformar os dados coletados em informações úteis.
 
@@ -63,7 +63,7 @@ A Landing Page apresenta essa problemática de maneira visual e informativa, uti
 
 A proposta do Pluvion é composta por diferentes elementos que trabalham de forma integrada.
 
-### 📡 SAE — Sistema de Alerta de Enchentes e Alagamentos
+### 📡 SAE — Sistema de Alerta de Enchentes
 
 O **SAE** é o dispositivo físico desenvolvido pelo projeto.
 
@@ -349,7 +349,7 @@ O projeto busca demonstrar como diferentes tecnologias podem ser integradas para
 
 O Pluvion representa a união entre **tecnologia, informação e prevenção**, buscando desenvolver uma solução que possa contribuir para o monitoramento de enchentes e alagamentos.
 
-**SAE — Sistema de Alerta de Enchentes e Alagamentos**
+**SAE — Sistema de Alerta de Enchentes**
 
 ---
 
