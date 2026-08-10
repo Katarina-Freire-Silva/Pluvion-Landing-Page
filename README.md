@@ -2,7 +2,7 @@
 
 
 <div align="center">
-    <img src="images/general/logo.svg" alt="Logo Pluvion" width="70" align="middle" style="margin-left: 30px;">
+    <img src="images/general/logo.svg" alt="Logo Pluvion" width="80" align="middle" style="margin-right: 100px;">
     <img src="images/general/Pluvion.svg" alt="Logo Pluvion" width="400" align="middle">
 </div>
 <br>
