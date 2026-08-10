@@ -75,6 +75,19 @@
   color: #fff;
 }
 
+
+.footer__col--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__col--center img {
+  margin-top: var(--space-2xs);
+  border-radius: var(--radius-sm);
+}
+
 .footer__bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: var(--space-md);
