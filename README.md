@@ -1,8 +1,6 @@
 <div align="center">
 
 
-### Tecnologia para prevenção, monitoramento e segurança diante de enchentes e alagamentos.
-
 <div align="center">
     <img src="images/general/logo.svg" alt="Logo Pluvion" width="50" align="middle">
     <img src="images/general/Pluvion.svg" alt="Logo Pluvion" width="200" align="middle">
