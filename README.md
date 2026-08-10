@@ -1,17 +1,12 @@
 <div align="center">
 
 
-<table align="center">
-  <tr>
-    <td>
-      <img src="images/general/logo.svg" alt="Logo Pluvion" width="75">
-    </td>
-    <td width="30"></td>
-    <td>
-      <img src="images/general/Pluvion.svg" alt="Logo Pluvion" width="400">
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="images/general/logo.svg" alt="Logo Pluvion" width="75" align="middle">
+  &nbsp;&nbsp;&nbsp;
+  <img src="images/general/Pluvion.svg" alt="Logo Pluvion" width="400" align="middle">
+</div>
+
 
 <br>
 
