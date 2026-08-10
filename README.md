@@ -1,10 +1,9 @@
 <div align="center">
 
-# 🌧️ PLUVION
 
 ### Tecnologia para prevenção, monitoramento e segurança diante de enchentes e alagamentos.
 
-<img src="images/general/logo.svg" alt="Logo Pluvion" width="220">
+<img src="images/general/logo.svg" alt="Logo Pluvion" width="100"> PLUVION
 
 <br>
 
