@@ -18,8 +18,7 @@ export const PLUVION_CONFIG = {
   carouselAutoplayInterval: 6000,
 
   // Caminho configurável para a monografia — SUBSTITUIR pelo PDF definitivo.
-  monographUrl: '',
-
+  monographUrl: 'https://drive.google.com/uc?export=download&id=1PMpwtRQvRNUx0hpPj3uCVZ_VY9FQH76w',
   // Caminho configurável para o vídeo pitch — SUBSTITUIR pela URL definitiva.
   pitchVideoUrl: '',
 };
