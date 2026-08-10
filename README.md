@@ -5,7 +5,7 @@
 
 <div align="center">
     <img src="images/general/logo.svg" alt="Logo Pluvion" width="50" align="middle">
-    <img src="images/general/Pluvion.svg" alt="Logo Pluvion" width="100" align="middle">
+    <img src="images/general/Pluvion.svg" alt="Logo Pluvion" width="200" align="middle">
 </div>
 
 <br>
