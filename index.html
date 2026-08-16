@@ -44,7 +44,7 @@
   <!-- ===================== HEADER ===================== -->
   <header class="site-header">
     <div class="container site-header__inner">
-      <a href="#" class="brand" aria-label="Pluvion — página inicial">
+      <a href="#intro" class="brand" aria-label="Pluvion — página inicial">
         <img class="brand__mark" src="images/general/logo.svg"/>
         <img class="brand__wordmark" src="images/general/Pluvion.svg" height="80" width="80"/>
       </a>
@@ -52,10 +52,10 @@
       <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
         <ul class="main-nav__list">
           <li><a class="main-nav__link" href="#questionario">Participar</a></li>
-          <li><a class="main-nav__link" href="#problema">O problema</a></li>
+          <li><a class="main-nav__link" href="#problema">Problemática</a></li>
           <li><a class="main-nav__link" href="#pesquisa">Pesquisa</a></li>
           <li><a class="main-nav__link" href="#proposito">Propósito</a></li>
-          <li><a class="main-nav__link" href="#como-funciona">Como funciona</a></li>
+          <li><a class="main-nav__link" href="#como-funciona">Funcionamento</a></li>
           <li><a class="main-nav__link" href="#tecnologia">Tecnologia</a></li>
           <li><a class="main-nav__link" href="#risco">Risco</a></li>
           <li><a class="main-nav__link" href="#instituicoes">Instituições</a></li>
@@ -75,25 +75,19 @@
 
   <main id="main">
     <!-- ===================== HERO ===================== -->
-    <section class="hero" aria-label="Apresentação">
+    <section class="hero" id="intro"aria-label="Apresentação">
       <div class="container hero__inner">
         <div class="hero__content">
           <p class="eyebrow hero__eyebrow">Monitoramento de enchentes em tempo real</p>
           <h1 class="hero-title hero__title">A leitura do risco,<br />na altura do olhar.</h1>
           <p class="lead hero__lead">
-            Pluvion conecta sensores instalados em bueiros e áreas de risco a alertas
-            personalizados por rua, bairro e cidade — para a população se antecipar
-            e para órgãos públicos decidirem com dados.
+            Pluvion conecta os sensores SAE (Sistema de Alerta de Enchentes) em locais próximos aos bueiros e áreas de risco, com a alertas
+            personalizados destinados à população, podendo ser filtradospor rua, bairro e cidade —  assim, empresas detém o monitoramento contínuo e os usuários do aplicativo têm acesso a alertas em tempo real.
           </p>
           <div class="hero__actions">
             <a href="#" class="btn btn-primary">Baixar o app</a>
             <a href="#" class="btn btn-secondary">Portal do Comprador</a>
           </div>
-          <a href="#questionario" class="hero__quiz-cta">
-            <span class="hero__quiz-cta-badge">Novo</span>
-            Responda 5 perguntas rápidas sobre sua realidade
-            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-          </a>
         </div>
 
         <div class="hero__visual" aria-hidden="true">
@@ -117,7 +111,7 @@
         <div class="section-head">
           <p class="eyebrow">Participação</p>
           <h2 class="section-title">Antes de seguir, queremos ouvir você.</h2>
-          <p class="lead">Cinco perguntas rápidas para entender como as enchentes tocam a sua realidade — sem cadastro, sem envio de dados, só para essa conversa.</p>
+          <p class="lead">Responda a cinco perguntas rápidas para saber se a sua realidade está sendo afetada pelas enchentes, como milhões de brasileiros — não se preocupe com cadastro ou com envio de dados, não compartilhamos nem recebemos nada.</p>
         </div>
 
         <div class="quiz" data-quiz>
@@ -127,19 +121,17 @@
 
           <div class="quiz-panel">
             <div class="quiz-step is-active" data-step="intro">
-              <p class="quiz-step__intro-text">São só 5 perguntas — leva menos de 2 minutos. Suas respostas ficam só nesta página; nada é salvo ou enviado para nenhum servidor.</p>
+              <p class="quiz-step__intro-text"> Em que parcela da sociedade brasileira você se encontra? Na que sofre constantemente com enchentes, ou na que apenas vê essa problemática atráves da mídia? Leva menos de 2 minutos para responder às cinco perguntas. Suas respostas ficam só nesta página, nada é salvo ou enviado para nenhum servidor.</p>
               <button type="button" class="btn btn-primary" data-quiz-start>
-                Começar
-                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+                COMEÇAR
               </button>
             </div>
 
             <div class="quiz-step" data-step="name">
               <label class="quiz-step__label" for="quiz-name">Como você gostaria de ser chamado?</label>
-              <input type="text" id="quiz-name" class="quiz-step__input" placeholder="Ex.: Morango" maxlength="24" autocomplete="off" />
+              <input type="text" id="quiz-name" class="quiz-step__input" placeholder="Digite a forma que deseja ser chamado" maxlength="24" autocomplete="off" />
               <button type="button" class="btn btn-primary" data-quiz-next>
-                Continuar
-                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+                CONTINUAR
               </button>
             </div>
 
@@ -398,27 +390,27 @@
           <article class="purpose-card reveal" tabindex="0" data-purpose-card>
             <span class="material-symbols-outlined purpose-card__icon" aria-hidden="true">flag</span>
             <h3 class="purpose-card__title">Por que existimos</h3>
-            <p class="purpose-card__summary">Enchentes ainda pegam comunidades de surpresa — não por falta de chuva, mas por falta de aviso a tempo.</p>
+            <p class="purpose-card__summary"> A sociedade brasileira busca por cuidado e proteção para a prevenção contra enchentes e alagamentos. É para atender às espectativas de um alerta na hora certa de forma precisa que o Pluvion existe.</p>
             <div class="purpose-card__detail">
-              <p>O Pluvion existe porque a diferença entre um alerta recebido a tempo e um recebido tarde demais pode ser a diferença entre um susto e uma tragédia. Cada sensor instalado é uma aposta em antecipação.</p>
+              <p>A diferença entre um alerta recebido a tempo e um recebido tarde demais pode ser determinante para decidir entre um susto e uma tragédia. Cada sensor instalado não é apenas um monitoramento por parte do comprador, mas uma ferramenta de proteção.</p>
             </div>
           </article>
 
           <article class="purpose-card reveal" tabindex="0" data-purpose-card>
             <span class="material-symbols-outlined purpose-card__icon" aria-hidden="true">visibility</span>
             <h3 class="purpose-card__title">O futuro que buscamos construir</h3>
-            <p class="purpose-card__summary">Um país onde nenhuma família descubra o risco quando a água já está na porta.</p>
+            <p class="purpose-card__summary">Buscamos trazer a proteção conectando tecnologia e inovação para a população e para os compradores do SAE. Num paí conictado, a informação sempre chega a tempo.</p>
             <div class="purpose-card__detail">
-              <p>Imaginamos cidades onde o monitoramento de risco é tão comum quanto a previsão do tempo — acessível, local e confiável o bastante para orientar decisões reais, de moradores a órgãos públicos.</p>
+              <p>Imaginamos cidades onde o monitoramento de risco é tão comum quanto a previsão do tempo, de forma acessível, filtrando de forma específica por local e de maneira confiável o bastante para orientar decisões reais, de moradores a órgãos públicos.</p>
             </div>
           </article>
 
           <article class="purpose-card reveal" tabindex="0" data-purpose-card>
             <span class="material-symbols-outlined purpose-card__icon" aria-hidden="true">balance</span>
             <h3 class="purpose-card__title">O que guia cada decisão</h3>
-            <p class="purpose-card__summary">Dados reais, alertas específicos e tecnologia a serviço de quem mais precisa dela.</p>
+            <p class="purpose-card__summary">Um trabalho bem feito com ideias concretas e bem definidas, focando sempre em proporcionar a melhor informação através de dados reais, alertas específicos e tecnologia a serviço de quem mais precisa da notificação na hora certa.</p>
             <div class="purpose-card__detail">
-              <p>Precisão antes de alarde, clareza antes de complexidade, e acesso antes de exclusividade — são esses princípios que moldam cada escolha técnica do Pluvion, do sensor ao aplicativo.</p>
+              <p>Precisão antes da catástrofe, clareza antes de casas inundadas, e acesso antes de pessoas desabrigadas, deslocadas e perdidias — são esses princípios que moldam cada escolha técnica do Pluvion, do sensor ao aplicativo.</p>
             </div>
           </article>
         </div>

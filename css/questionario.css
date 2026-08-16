@@ -4,10 +4,17 @@
 
 .questionario {
   padding-block: var(--space-2xl);
+  background: var(--color-surface-alt);
 }
 
 .questionario .section-head {
   max-width: 42rem;
+}
+
+.container .questionario__inner{
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-lg);
 }
 
 .quiz {
