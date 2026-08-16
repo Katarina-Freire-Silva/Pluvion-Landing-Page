@@ -4,7 +4,9 @@
  * durante o scroll e menu mobile (abrir/fechar, Escape, foco).
  */
 
-export function initNavigation() {
+window.Pluvion = window.Pluvion || {};
+
+Pluvion.initNavigation = function () {
   const header = document.querySelector('.site-header');
   const nav = document.querySelector('.main-nav');
   const toggle = document.querySelector('.menu-toggle');
@@ -63,4 +65,4 @@ export function initNavigation() {
 
     sections.forEach((section) => observer.observe(section));
   }
-}
+};

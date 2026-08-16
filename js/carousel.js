@@ -5,9 +5,9 @@
  * e acessibilidade.
  */
 
-import { PLUVION_CONFIG } from './config.js';
+window.Pluvion = window.Pluvion || {};
 
-export function initCarousel() {
+Pluvion.initCarousel = function () {
   const root = document.querySelector('.news-carousel');
   if (!root) return;
 
@@ -100,8 +100,8 @@ export function initCarousel() {
 
   // ---- Autoplay com pausa no hover/foco ----
   function startAutoplay() {
-    if (total <= 1 || !PLUVION_CONFIG.carouselAutoplayInterval) return;
-    autoplayTimer = window.setInterval(next, PLUVION_CONFIG.carouselAutoplayInterval);
+    if (total <= 1 || !Pluvion.CONFIG.carouselAutoplayInterval) return;
+    autoplayTimer = window.setInterval(next, Pluvion.CONFIG.carouselAutoplayInterval);
   }
 
   function stopAutoplay() {
@@ -123,4 +123,4 @@ export function initCarousel() {
 
   update();
   startAutoplay();
-}
+};

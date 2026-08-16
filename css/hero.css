@@ -33,6 +33,53 @@
   gap: var(--space-sm);
 }
 
+/* ---- CTA de destaque para o questionário — não substitui os CTAs acima ---- */
+.hero__quiz-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-pill);
+  background: rgba(39, 156, 107, 0.1);
+  border: 1.5px solid rgba(39, 156, 107, 0.35);
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  max-width: fit-content;
+  transition: border-color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
+}
+
+.hero__quiz-cta:hover {
+  border-color: var(--color-accent-green-start);
+  background: rgba(39, 156, 107, 0.16);
+  transform: translateY(-1px);
+}
+
+.hero__quiz-cta-badge {
+  background: var(--color-accent-green-start);
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-pill);
+  flex-shrink: 0;
+}
+
+.hero__quiz-cta .material-symbols-outlined {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 560px) {
+  .hero__quiz-cta {
+    max-width: 100%;
+  }
+}
+
 /* ---- Card de status (representação visual) ---- */
 .status-card {
   position: relative;

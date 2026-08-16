@@ -31,6 +31,12 @@
   color: #fff;
 }
 
+.footer__brand-wordmark {
+  height: 26px;
+  width: auto;
+  flex-shrink: 0;
+}
+
 .footer__brand p {
   font-size: var(--fs-sm);
   max-width: 24rem;

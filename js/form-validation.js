@@ -3,7 +3,9 @@
  * Regras de validação reutilizáveis, desacopladas da lógica de envio.
  */
 
-export const validators = {
+window.Pluvion = window.Pluvion || {};
+
+Pluvion.validators = {
   required(value) {
     return String(value ?? '').trim().length > 0;
   },
@@ -29,7 +31,7 @@ export const validators = {
  * @param {Object} rules - { fieldName: [{ test: fn, message: string }] }
  * @returns {{ valid: boolean, errors: Object }}
  */
-export function validateForm(form, rules) {
+Pluvion.validateForm = function (form, rules) {
   const errors = {};
   let valid = true;
 
@@ -49,9 +51,9 @@ export function validateForm(form, rules) {
   });
 
   return { valid, errors };
-}
+};
 
-export function showFieldErrors(form, errors) {
+Pluvion.showFieldErrors = function (form, errors) {
   form.querySelectorAll('.field').forEach((fieldWrap) => {
     fieldWrap.classList.remove('has-error');
   });
@@ -65,4 +67,4 @@ export function showFieldErrors(form, errors) {
     const errorEl = fieldWrap.querySelector('.field-error');
     if (errorEl) errorEl.textContent = message;
   });
-}
+};

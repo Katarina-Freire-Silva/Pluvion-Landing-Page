@@ -60,6 +60,11 @@
 .chart-card__canvas-wrap {
   position: relative;
   height: 260px;
+  width: 100%;
+}
+
+.chart-card__canvas-wrap canvas {
+  max-width: 100%;
 }
 
 .chart-card__interpretation {

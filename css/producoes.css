@@ -51,6 +51,8 @@
   align-items: center;
   justify-content: center;
   transition: transform var(--transition-base), background var(--transition-base);
+  font-size: 34px;
+  padding-left: 4px;
 }
 
 .video-pitch__play:hover {

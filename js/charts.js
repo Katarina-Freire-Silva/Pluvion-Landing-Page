@@ -5,6 +5,8 @@
  * reais da pesquisa de campo assim que estiverem disponíveis.
  */
 
+window.Pluvion = window.Pluvion || {};
+
 // SUBSTITUIR PELOS DADOS REAIS DA PESQUISA DE CAMPO
 const researchData = {
   frequenciaAlagamentos: {
@@ -74,7 +76,7 @@ async function loadChartJs() {
   return window.Chart;
 }
 
-export async function initCharts() {
+Pluvion.initCharts = async function () {
   const canvases = document.querySelectorAll('[data-chart]');
   if (canvases.length === 0) return;
 
@@ -121,4 +123,4 @@ export async function initCharts() {
       options: baseOptions(),
     });
   });
-}
+};

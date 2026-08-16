@@ -12,23 +12,22 @@
  * ao backend. Aqui apenas registramos a tentativa de envio.
  */
 
-import { PLUVION_CONFIG } from './config.js';
-import { validators, validateForm, showFieldErrors } from './form-validation.js';
+window.Pluvion = window.Pluvion || {};
 
 const RULES = {
-  responsibleName: [{ test: validators.required, message: 'Informe o nome do responsável.' }],
+  responsibleName: [{ test: Pluvion.validators.required, message: 'Informe o nome do responsável.' }],
   email: [
-    { test: validators.required, message: 'Informe um e-mail.' },
-    { test: validators.email, message: 'Informe um e-mail válido.' },
+    { test: Pluvion.validators.required, message: 'Informe um e-mail.' },
+    { test: Pluvion.validators.email, message: 'Informe um e-mail válido.' },
   ],
   phone: [
-    { test: validators.required, message: 'Informe um telefone.' },
-    { test: validators.phone, message: 'Informe um telefone válido.' },
+    { test: Pluvion.validators.required, message: 'Informe um telefone.' },
+    { test: Pluvion.validators.phone, message: 'Informe um telefone válido.' },
   ],
-  institutionName: [{ test: validators.required, message: 'Informe o nome da instituição.' }],
-  institutionType: [{ test: validators.required, message: 'Selecione o tipo de instituição.' }],
-  city: [{ test: validators.required, message: 'Informe a cidade.' }],
-  state: [{ test: validators.required, message: 'Informe o estado.' }],
+  institutionName: [{ test: Pluvion.validators.required, message: 'Informe o nome da instituição.' }],
+  institutionType: [{ test: Pluvion.validators.required, message: 'Selecione o tipo de instituição.' }],
+  city: [{ test: Pluvion.validators.required, message: 'Informe a cidade.' }],
+  state: [{ test: Pluvion.validators.required, message: 'Informe o estado.' }],
   consent: [{ test: (v) => v === true, message: 'É necessário aceitar para continuar.' }],
 };
 
@@ -54,12 +53,12 @@ function hideStatus(form) {
 }
 
 async function submitInstitutionalRequest(payload) {
-  if (!PLUVION_CONFIG.institutionalRequestEndpoint) {
+  if (!Pluvion.CONFIG.institutionalRequestEndpoint) {
     // Endpoint ainda não configurado — não simulamos aprovação nem sucesso.
     throw new Error('ENDPOINT_NOT_CONFIGURED');
   }
 
-  const response = await fetch(PLUVION_CONFIG.institutionalRequestEndpoint, {
+  const response = await fetch(Pluvion.CONFIG.institutionalRequestEndpoint, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload),
@@ -98,8 +97,8 @@ function handleSubmit(form) {
 
     hideStatus(form);
 
-    const { valid, errors } = validateForm(form, RULES);
-    showFieldErrors(form, errors);
+    const { valid, errors } = Pluvion.validateForm(form, RULES);
+    Pluvion.showFieldErrors(form, errors);
 
     if (!valid) {
       const firstErrorField = form.querySelector('.field.has-error input, .field.has-error select, .field.has-error textarea');
@@ -141,8 +140,8 @@ function handleSubmit(form) {
   });
 }
 
-export function initInstitutionalForm() {
+Pluvion.initInstitutionalForm = function () {
   const form = document.querySelector('.institutional-form');
   if (!form) return;
   handleSubmit(form);
-}
+};

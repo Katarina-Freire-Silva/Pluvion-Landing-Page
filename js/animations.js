@@ -4,7 +4,9 @@
  * Respeita prefers-reduced-motion e usa IntersectionObserver.
  */
 
-export function initAnimations() {
+window.Pluvion = window.Pluvion || {};
+
+Pluvion.initAnimations = function () {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const revealEls = document.querySelectorAll('.reveal');
 
@@ -29,6 +31,5 @@ export function initAnimations() {
     el.style.transitionDelay = `${Math.min(index % 4, 3) * 60}ms`;
     observer.observe(el);
   });
-
-}
+};
 

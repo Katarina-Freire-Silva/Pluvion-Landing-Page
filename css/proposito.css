@@ -1,0 +1,90 @@
+/* ==========================================================================
+   PROPÓSITO DA PLUVION
+   ========================================================================== */
+
+.proposito {
+  padding-block: var(--space-2xl);
+  background: var(--color-surface-alt);
+}
+
+.proposito .section-head {
+  max-width: 44rem;
+}
+
+.purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.purpose-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  cursor: pointer;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.purpose-card:hover,
+.purpose-card:focus-visible {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.purpose-card__icon {
+  color: var(--color-primary);
+  font-size: 28px;
+  margin-bottom: var(--space-sm);
+}
+
+.purpose-card__title {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-2xs);
+}
+
+.purpose-card__summary {
+  font-size: var(--fs-sm);
+}
+
+.purpose-card__detail {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows var(--transition-base), opacity var(--transition-base), margin-top var(--transition-base);
+}
+
+.purpose-card__detail p {
+  overflow: hidden;
+  font-size: var(--fs-sm);
+  border-top: 1px solid var(--color-border);
+  padding-top: 0;
+}
+
+.purpose-card.is-expanded .purpose-card__detail {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-top: var(--space-sm);
+}
+
+.purpose-card.is-expanded .purpose-card__detail p {
+  padding-top: var(--space-sm);
+}
+
+/* Fallback simples para navegadores sem suporte a grid-template-rows animável */
+@supports not (grid-template-rows: 0fr) {
+  .purpose-card__detail {
+    max-height: 0;
+    overflow: hidden;
+  }
+  .purpose-card.is-expanded .purpose-card__detail {
+    max-height: 220px;
+  }
+}
+
+@media (max-width: 900px) {
+  .purpose-grid {
+    grid-template-columns: 1fr;
+  }
+}

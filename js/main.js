@@ -2,14 +2,16 @@
  * main.js
  * Ponto de entrada da Landing Page Pluvion.
  * Inicializa cada módulo — a lógica em si vive nos respectivos arquivos.
+ *
+ * Este arquivo deve ser o ÚLTIMO <script> carregado no index.html, depois
+ * de todos os outros módulos (config.js, navigation.js, animations.js,
+ * carousel.js, charts.js, form-validation.js, institutional-form.js,
+ * questionnaire-data.js, questionnaire.js, purpose.js, rating.js), já que
+ * cada um deles registra suas funções em window.Pluvion e main.js é quem
+ * efetivamente as chama.
  */
 
-import { PLUVION_CONFIG } from './config.js';
-import { initNavigation } from './navigation.js';
-import { initAnimations } from './animations.js';
-import { initCarousel } from './carousel.js';
-import { initCharts } from './charts.js';
-import { initInstitutionalForm } from './institutional-form.js';
+window.Pluvion = window.Pluvion || {};
 
 /**
  * Liga os links de Produções (monografia e vídeo pitch) aos caminhos
@@ -20,8 +22,8 @@ import { initInstitutionalForm } from './institutional-form.js';
 function initProductionLinks() {
   const monographLink = document.getElementById('monograph-download');
   if (monographLink) {
-    if (PLUVION_CONFIG.monographUrl) {
-      monographLink.href = PLUVION_CONFIG.monographUrl;
+    if (Pluvion.CONFIG.monographUrl) {
+      monographLink.href = Pluvion.CONFIG.monographUrl;
     } else {
       monographLink.setAttribute('aria-disabled', 'true');
       monographLink.addEventListener('click', (event) => {
@@ -33,8 +35,8 @@ function initProductionLinks() {
 
   const videoPitchLink = document.querySelector('.video-pitch');
   if (videoPitchLink) {
-    if (PLUVION_CONFIG.pitchVideoUrl) {
-      videoPitchLink.href = PLUVION_CONFIG.pitchVideoUrl;
+    if (Pluvion.CONFIG.pitchVideoUrl) {
+      videoPitchLink.href = Pluvion.CONFIG.pitchVideoUrl;
     } else {
       videoPitchLink.addEventListener('click', (event) => {
         event.preventDefault();
@@ -45,10 +47,13 @@ function initProductionLinks() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  initNavigation();
-  initAnimations();
-  initCarousel();
-  initCharts();
-  initInstitutionalForm();
+  Pluvion.initNavigation();
+  Pluvion.initAnimations();
+  Pluvion.initCarousel();
+  Pluvion.initCharts();
+  Pluvion.initInstitutionalForm();
   initProductionLinks();
+  Pluvion.initQuestionnaire();
+  Pluvion.initPurposeCards();
+  Pluvion.initRating();
 });

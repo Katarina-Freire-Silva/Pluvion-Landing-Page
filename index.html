@@ -24,14 +24,17 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/questionario.css" />
   <link rel="stylesheet" href="css/problema.css" />
   <link rel="stylesheet" href="css/pesquisa.css" />
+  <link rel="stylesheet" href="css/proposito.css" />
   <link rel="stylesheet" href="css/como-funciona.css" />
   <link rel="stylesheet" href="css/tecnologia.css" />
   <link rel="stylesheet" href="css/risco.css" />
   <link rel="stylesheet" href="css/instituicoes.css" />
   <link rel="stylesheet" href="css/criadores.css" />
   <link rel="stylesheet" href="css/producoes.css" />
+  <link rel="stylesheet" href="css/avaliacao.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
@@ -43,13 +46,15 @@
     <div class="container site-header__inner">
       <a href="#" class="brand" aria-label="Pluvion — página inicial">
         <img class="brand__mark" src="images/general/logo.svg"/>
-        <img src="images/general/Pluvion.svg" height="80" width="80"/>
+        <img class="brand__wordmark" src="images/general/Pluvion.svg" height="80" width="80"/>
       </a>
 
       <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
         <ul class="main-nav__list">
+          <li><a class="main-nav__link" href="#questionario">Participar</a></li>
           <li><a class="main-nav__link" href="#problema">O problema</a></li>
           <li><a class="main-nav__link" href="#pesquisa">Pesquisa</a></li>
+          <li><a class="main-nav__link" href="#proposito">Propósito</a></li>
           <li><a class="main-nav__link" href="#como-funciona">Como funciona</a></li>
           <li><a class="main-nav__link" href="#tecnologia">Tecnologia</a></li>
           <li><a class="main-nav__link" href="#risco">Risco</a></li>
@@ -84,6 +89,11 @@
             <a href="#" class="btn btn-primary">Baixar o app</a>
             <a href="#" class="btn btn-secondary">Portal do Comprador</a>
           </div>
+          <a href="#questionario" class="hero__quiz-cta">
+            <span class="hero__quiz-cta-badge">Novo</span>
+            Responda 5 perguntas rápidas sobre sua realidade
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </a>
         </div>
 
         <div class="hero__visual" aria-hidden="true">
@@ -96,6 +106,51 @@
                 Nível baixo: 0,31 m · Atualizado há 4 min
               </span>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QUESTIONÁRIO INTERATIVO ===================== -->
+    <section class="questionario reveal" id="questionario" aria-label="Questionário interativo">
+      <div class="container questionario__inner">
+        <div class="section-head">
+          <p class="eyebrow">Participação</p>
+          <h2 class="section-title">Antes de seguir, queremos ouvir você.</h2>
+          <p class="lead">Cinco perguntas rápidas para entender como as enchentes tocam a sua realidade — sem cadastro, sem envio de dados, só para essa conversa.</p>
+        </div>
+
+        <div class="quiz" data-quiz>
+          <div class="quiz__progress" aria-hidden="true">
+            <div class="quiz__progress-bar" data-quiz-progress></div>
+          </div>
+
+          <div class="quiz-panel">
+            <div class="quiz-step is-active" data-step="intro">
+              <p class="quiz-step__intro-text">São só 5 perguntas — leva menos de 2 minutos. Suas respostas ficam só nesta página; nada é salvo ou enviado para nenhum servidor.</p>
+              <button type="button" class="btn btn-primary" data-quiz-start>
+                Começar
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+              </button>
+            </div>
+
+            <div class="quiz-step" data-step="name">
+              <label class="quiz-step__label" for="quiz-name">Como você gostaria de ser chamado?</label>
+              <input type="text" id="quiz-name" class="quiz-step__input" placeholder="Ex.: Morango" maxlength="24" autocomplete="off" />
+              <button type="button" class="btn btn-primary" data-quiz-next>
+                Continuar
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+              </button>
+            </div>
+
+            <div class="quiz-questions" data-quiz-questions></div>
+
+            <div class="quiz-step" data-step="result">
+              <div class="quiz-result" data-quiz-result></div>
+              <button type="button" class="btn btn-secondary" data-quiz-restart>
+                <span class="material-symbols-outlined" aria-hidden="true">refresh</span>
+                Refazer o questionário
+              </button>
             </div>
           </div>
         </div>
@@ -107,7 +162,7 @@
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow eyebrow--on-steel">O problema</p>
-          <h2 class="section-title">Os sistemas tradicionais de alerta ainda chegam depois que a água já subiu sendo, portanto, ineficientes.</h2>
+          <h2 class="section-title">Os sistemas tradicionais de alerta ainda chegam depois que a água já subiu.</h2>
         </div>
 
         <div class="problema__grid">
@@ -219,8 +274,12 @@
             <div class="news-carousel__controls">
               <div class="news-carousel__dots" role="tablist" aria-label="Selecionar notícia"></div>
               <div class="news-carousel__arrows">
-                <button type="button" class="carousel-btn" data-carousel-prev aria-label="Notícia anterior">‹</button>
-                <button type="button" class="carousel-btn" data-carousel-next aria-label="Próxima notícia">›</button>
+                <button type="button" class="carousel-btn" data-carousel-prev aria-label="Notícia anterior">
+                  <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+                </button>
+                <button type="button" class="carousel-btn" data-carousel-next aria-label="Próxima notícia">
+                  <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+                </button>
               </div>
             </div>
           </div>
@@ -322,6 +381,46 @@
           </article>
 
 
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROPÓSITO DA PLUVION ===================== -->
+    <section class="proposito" id="proposito">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Propósito</p>
+          <h2 class="section-title">Por trás da tecnologia, uma escolha: antecipar para proteger.</h2>
+          <p class="lead">O Pluvion nasceu da constatação de que informação chega tarde demais para quem mais precisa dela. Isso orienta cada decisão do projeto — da forma como medimos o risco até como entregamos o alerta.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <article class="purpose-card reveal" tabindex="0" data-purpose-card>
+            <span class="material-symbols-outlined purpose-card__icon" aria-hidden="true">flag</span>
+            <h3 class="purpose-card__title">Por que existimos</h3>
+            <p class="purpose-card__summary">Enchentes ainda pegam comunidades de surpresa — não por falta de chuva, mas por falta de aviso a tempo.</p>
+            <div class="purpose-card__detail">
+              <p>O Pluvion existe porque a diferença entre um alerta recebido a tempo e um recebido tarde demais pode ser a diferença entre um susto e uma tragédia. Cada sensor instalado é uma aposta em antecipação.</p>
+            </div>
+          </article>
+
+          <article class="purpose-card reveal" tabindex="0" data-purpose-card>
+            <span class="material-symbols-outlined purpose-card__icon" aria-hidden="true">visibility</span>
+            <h3 class="purpose-card__title">O futuro que buscamos construir</h3>
+            <p class="purpose-card__summary">Um país onde nenhuma família descubra o risco quando a água já está na porta.</p>
+            <div class="purpose-card__detail">
+              <p>Imaginamos cidades onde o monitoramento de risco é tão comum quanto a previsão do tempo — acessível, local e confiável o bastante para orientar decisões reais, de moradores a órgãos públicos.</p>
+            </div>
+          </article>
+
+          <article class="purpose-card reveal" tabindex="0" data-purpose-card>
+            <span class="material-symbols-outlined purpose-card__icon" aria-hidden="true">balance</span>
+            <h3 class="purpose-card__title">O que guia cada decisão</h3>
+            <p class="purpose-card__summary">Dados reais, alertas específicos e tecnologia a serviço de quem mais precisa dela.</p>
+            <div class="purpose-card__detail">
+              <p>Precisão antes de alarde, clareza antes de complexidade, e acesso antes de exclusividade — são esses princípios que moldam cada escolha técnica do Pluvion, do sensor ao aplicativo.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -628,12 +727,47 @@
           <div class="card monograph-card reveal">
             <h3>Conheça o projeto em profundidade.</h3>
             <p>A monografia completa reúne a pesquisa, a fundamentação teórica e o desenvolvimento técnico por trás do Pluvion.</p>
-            <a href="https://drive.google.com/uc?export=download&id=1PMpwtRQvRNUx0hpPj3uCVZ_VY9FQH76w" class="btn btn-secondary" id="monograph-download">Baixar monografia</a>
+            <a href="https://drive.google.com/uc?export=download&id=1PMpwtRQvRNUx0hpPj3uCVZ_VY9FQH76w" class="btn btn-secondary" id="monograph-download">
+              <span class="material-symbols-outlined" aria-hidden="true">download</span>
+              Baixar monografia
+            </a>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- ===================== AVALIAÇÃO ===================== -->
+  <section class="avaliacao" id="avaliacao" aria-label="Avaliação da experiência">
+    <div class="container">
+      <div class="avaliacao__panel reveal">
+        <h3 class="avaliacao__title">Como foi sua experiência com o Pluvion?</h3>
+        <div class="star-rating" data-star-rating role="radiogroup" aria-label="Avalie sua experiência de 1 a 5 estrelas">
+          <button type="button" class="star-rating__star" data-star-value="1" aria-label="1 estrela" role="radio" aria-checked="false">
+            <span class="material-symbols-outlined" aria-hidden="true">star</span>
+          </button>
+          <button type="button" class="star-rating__star" data-star-value="2" aria-label="2 estrelas" role="radio" aria-checked="false">
+            <span class="material-symbols-outlined" aria-hidden="true">star</span>
+          </button>
+          <button type="button" class="star-rating__star" data-star-value="3" aria-label="3 estrelas" role="radio" aria-checked="false">
+            <span class="material-symbols-outlined" aria-hidden="true">star</span>
+          </button>
+          <button type="button" class="star-rating__star" data-star-value="4" aria-label="4 estrelas" role="radio" aria-checked="false">
+            <span class="material-symbols-outlined" aria-hidden="true">star</span>
+          </button>
+          <button type="button" class="star-rating__star" data-star-value="5" aria-label="5 estrelas" role="radio" aria-checked="false">
+            <span class="material-symbols-outlined" aria-hidden="true">star</span>
+          </button>
+        </div>
+        <button type="button" class="btn btn-primary" data-rating-submit>Finalizar</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="rating-toast" data-rating-toast aria-live="polite">
+    <span class="material-symbols-outlined" aria-hidden="true">favorite</span>
+    <span>Muito obrigada pela sua resposta!</span>
+  </div>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer" id="footer">
@@ -642,7 +776,7 @@
         <div class="footer__brand">
           <a href="#" class="footer__brand-mark">
             <img src="images/general/logo.svg" alt="" width="22" height="22" />
-            <img src="images/general/Pluvion-branco.svg" alt="" width="100" height="100"/>
+            <img class="footer__brand-wordmark" src="images/general/Pluvion-branco.svg" alt="" width="100" height="100"/>
           </a>
           <p>Monitoramento e alerta de enchentes e alagamentos, do sensor ao alerta — para pessoas e instituições decidirem com dados.</p>
           <div class="footer__social">
@@ -685,6 +819,24 @@
     </div>
   </footer>
 
-  <script type="module" src="js/main.js"></script>
+  <!--
+    Scripts carregados como scripts clássicos (sem type="module"), em ordem
+    de dependência, comunicando-se via window.Pluvion. Isso é proposital:
+    scripts type="module" são bloqueados pelo navegador quando a página é
+    aberta direto do disco (file://) em vez de servida por um servidor —
+    e este projeto precisa funcionar também com duplo clique no index.html.
+  -->
+  <script src="js/config.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/questionnaire-data.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/institutional-form.js"></script>
+  <script src="js/questionnaire.js"></script>
+  <script src="js/purpose.js"></script>
+  <script src="js/rating.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

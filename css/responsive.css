@@ -15,7 +15,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .main-nav {
     position: fixed;
     top: 64px;
