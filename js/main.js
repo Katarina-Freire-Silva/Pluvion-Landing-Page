@@ -56,4 +56,5 @@ document.addEventListener('DOMContentLoaded', () => {
   Pluvion.initQuestionnaire();
   Pluvion.initPurposeCards();
   Pluvion.initRating();
+  Pluvion.initVideoPitch(); // NOVA LINHA
 });

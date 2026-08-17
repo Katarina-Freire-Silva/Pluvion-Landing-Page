@@ -712,9 +712,17 @@
         </div>
 
         <div class="producoes__grid">
-          <a href="#" class="video-pitch reveal" aria-label="Assistir ao vídeo pitch do Pluvion (em breve)">
-            <video src="video/pitch.mp4" autoplay loop></video>
-          </a>
+          <div class="video-pitch reveal">
+            <video
+              src="video/pitch.mp4"
+              controls
+              loop
+              muted
+              playsinline
+              preload="metadata"
+              disablepictureinpicture
+            ></video>
+          </div>
 
           <div class="card monograph-card reveal">
             <h3>Conheça o projeto em profundidade.</h3>
@@ -827,6 +835,7 @@
   <script src="js/questionnaire.js"></script>
   <script src="js/purpose.js"></script>
   <script src="js/rating.js"></script>
+  <script src="js/video-pitch.js"></script> 
   <script src="js/main.js"></script>
 </body>
 </html>
