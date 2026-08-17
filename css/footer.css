@@ -91,7 +91,6 @@
 
 .footer__col--center img {
   margin-top: var(--space-2xs);
-  border-radius: var(--radius-sm);
 }
 
 .footer__bottom {
