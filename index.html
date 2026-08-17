@@ -453,10 +453,10 @@
     <!-- ===================== TECNOLOGIA — SAE ===================== -->
     <section class="tecnologia" id="tecnologia">
       <div class="container tecnologia__inner">
-        <div class="device-visual reveal">
-          <img src="images/device/sae.png" alt="Ilustração provisória do dispositivo SAE" loading="lazy" />
+        <div class="device-visual reveal" data-device-showcase>
+          <img src="images/device/sae.png" alt="Fotografia do dispositivo SAE" class="device-showcase__media is-active" data-showcase-image loading="lazy" />
+          <video class="device-showcase__media" muted playsinline data-showcase-video></video>
         </div>
-
         <div class="device-panel reveal">
           <span class="badge device-panel__badge">SAE — Sistema de Alerta de Enchentes</span>
           <h2>O sensor por trás de cada alerta.</h2>
@@ -609,7 +609,12 @@
 
             <div class="checkbox-field">
               <input type="checkbox" id="consent" name="consent" />
-              <label for="consent">Concordo com o uso dos dados informados para fins de análise e contato institucional. <a href="#termos" class="termos">Termos de Uso</a> </label>
+              <label for="consent">
+                Concordo com o uso dos dados informados para fins de análise e contato institucional. 
+                <a href="file:///C:/Users/Usu%C3%A1rio/Downloads/IPSSI_05.08%20Pol%C3%ADtica%20de%20Seguran%C3%A7a.pdf" target="_blank" rel="noopener" class="termos">
+                  Termos de Uso
+                </a> 
+              </label>
             </div>
             <span class="field-error" id="consent-error"></span>
 
@@ -682,8 +687,7 @@
             <span class="creator-card__role">Sistemas Embarcados</span>
             <p class="creator-card__bio">Foco no desenvolvimento de sistemas embarcados para aplicações de monitoramento e controle.</p>
             <div class="creator-card__social">
-              <a href="#" aria-label="GitHub"><img src="images/general/Github.png" alt="" width="15" height="15"/></a>
-              <a href="#" aria-label="LinkedIn"><img src="images/general/Linkedin.png" alt="" width="15" height="15"/></a>
+              <a href="https://github.com/rodrigoramosriber-code" aria-label="GitHub"><img src="images/general/Github.png" alt="" width="15" height="15"/></a>
             </div>
           </article>
 
@@ -836,6 +840,7 @@
   <script src="js/purpose.js"></script>
   <script src="js/rating.js"></script>
   <script src="js/video-pitch.js"></script> 
+  <script src="js/device-showcase.js"></script> 
   <script src="js/main.js"></script>
 </body>
 </html>

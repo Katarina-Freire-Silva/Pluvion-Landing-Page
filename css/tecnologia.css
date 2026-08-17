@@ -24,6 +24,22 @@
   position: relative;
 }
 
+.device-showcase__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 700ms ease;
+  z-index: 0;
+}
+
+.device-showcase__media.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
 .device-visual img {
   width: 100%;
   height: 100%;
