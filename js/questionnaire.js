@@ -1,9 +1,7 @@
 /**
  * questionnaire.js
  * Controla o fluxo do questionário interativo: introdução, nome,
- * cinco perguntas (uma de cada vez, com transição), e resultado
- * personalizado calculado localmente — sem backend, sem estatística
- * fictícia, sem gráfico.
+ * cinco perguntas.
  */
 
 window.Pluvion = window.Pluvion || {};
@@ -198,7 +196,6 @@ Pluvion.initQuestionnaire = function () {
     const greetingName = state.name || 'você';
 
     resultWrap.innerHTML = `
-      <span class="quiz-result__badge">Resultado personalizado</span>
       <h3 class="quiz-result__title">${profile.title}</h3>
       <p class="quiz-result__text">${profile.buildText(name)}</p>
       <div class="quiz-result__stat">

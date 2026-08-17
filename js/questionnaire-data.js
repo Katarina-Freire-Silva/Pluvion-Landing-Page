@@ -3,14 +3,8 @@ window.Pluvion = window.Pluvion || {};
 /**
  * questionnaire-data.js
  * Banco de perguntas e sínteses personalizadas do questionário interativo.
- *
- * Todas as sínteses citam apenas dados reais e verificáveis (IBGE, Cemaden),
- * pesquisados e confirmados antes desta implementação. Nenhum número é
- * inventado — os mesmos ~5 dados verificados são reaproveitados entre os
- * 18 perfis, cada um com um recorte de texto diferente.
- */
+*/
 
-// SUBSTITUIR os valores das faixas de renda caso o salário mínimo mude.
 Pluvion.SALARIO_MINIMO_2026 = 1621;
 
 Pluvion.QUESTIONS = [
@@ -82,7 +76,7 @@ Pluvion.QUESTIONS = [
   },
 ];
 
-/* ---- Dados reais usados nas sínteses (todos verificados antes do uso) ---- */
+/* ---- Dados reais usados nas sínteses ---- */
 const STAT_POPULACAO_8M = {
   value: 'Mais de 8,2 milhões',
   context:
@@ -128,11 +122,8 @@ const STAT_ALERTA_INEFICAZ = {
   url: 'https://agencia.fapesp.br/sistemas-de-alerta-e-planos-para-evitar-desastres-por-chuvas-extremas-ainda-sao-falhos-aponta-estudo/51557',
 };
 
-/**
- * 18 perfis = 3 níveis de exposição × 3 níveis de atitude × 2 contextos de renda.
- * A chave de cada perfil é montada dinamicamente em questionnaire.js a partir
- * das respostas — ver computeProfileKey().
- */
+
+
 Pluvion.PROFILES = {
   'baixa_reativa_pad': {
     title: 'Uma realidade distante, mas não alheia',
