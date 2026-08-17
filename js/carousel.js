@@ -1,8 +1,6 @@
 /**
  * carousel.js
- * Carrossel de notícias — controla navegação anterior/próximo,
- * indicadores, autoplay opcional, pausa no hover, teclado, swipe
- * e acessibilidade.
+ * Carrossel de notícias.
  */
 
 window.Pluvion = window.Pluvion || {};

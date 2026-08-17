@@ -1,6 +1,5 @@
 /**
  * form-validation.js
- * Regras de validação reutilizáveis, desacopladas da lógica de envio.
  */
 
 window.Pluvion = window.Pluvion || {};

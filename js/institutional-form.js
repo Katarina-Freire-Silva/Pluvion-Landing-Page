@@ -7,9 +7,6 @@
  *   Usuário preenche → validação → botão enviar → loading →
  *   endpoint seguro (Cloud Function) → backend → Firebase →
  *   solicitação registrada → análise → aprovação/rejeição → e-mail.
- *
- * Este módulo NUNCA decide aprovação — isso pertence exclusivamente
- * ao backend. Aqui apenas registramos a tentativa de envio.
  */
 
 window.Pluvion = window.Pluvion || {};

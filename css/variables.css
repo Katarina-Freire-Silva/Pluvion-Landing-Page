@@ -1,19 +1,18 @@
 /* ==========================================================================
    PLUVION — DESIGN TOKENS
-   Fonte da verdade para cores, tipografia, espaçamento e demais tokens.
    ========================================================================== */
 
 :root {
   /* ---- Cor: marca ---- */
-  --color-primary: #396A83;        /* botão CTA principal, links de destaque */
-  --color-primary-dark: #3E6883;   /* hover / estados ativos */
-  --color-steel: #396A83;          /* fundo da seção "O problema" */
-  --color-steel-deep: #294759;     /* cards sobre fundo steel */
+  --color-primary: #396A83;        
+  --color-primary-dark: #3E6883;   
+  --color-steel: #396A83;         
+  --color-steel-deep: #294759;     
 
-  --color-accent-green-start: #279C6B;  /* gradiente do card "status da região" */
+  --color-accent-green-start: #279C6B;  
   --color-accent-green-end: #10402C;
 
-  --color-navy: #1C303D;           /* fundo institucional / footer */
+  --color-navy: #1C303D;           
   --color-navy-deep: #131F28;
 
   /* ---- Cor: neutros / superfícies ---- */
@@ -36,7 +35,7 @@
   --color-alert: #E2672C;
   --color-danger: #C31F3D;
 
-  /* ---- Escala de risco (não misturar com estados genéricos) ---- */
+  /* ---- Escala de risco ---- */
   --risk-1: #279C6B;
   --risk-1-bg: #E7F5EE;
   --risk-2: #E7A93D;
@@ -99,7 +98,7 @@
   --transition-super-slow: 700ms cubic-bezier(0.22, 0.61, 0.36, 1);
 
 
-  /* ---- Breakpoints (referência — usados via media query, não var()) ---- */
+  /* ---- Breakpoints ---- */
   --bp-sm: 480px;
   --bp-md: 768px;
   --bp-lg: 1080px;

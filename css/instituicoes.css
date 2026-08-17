@@ -86,6 +86,24 @@
   gap: var(--space-sm);
 }
 
+
+.termos-inst{
+  position: relative;
+  color: var(--risk-1-bg);
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(226, 233, 236, 0.45);
+  transition: text-shadow var(--transition-base), color var(--transition-base);
+  animation: termos-glow 2.4s ease-in-out infinite;
+}
+
+.termos-inst:hover {
+  color: var(--risk-1-bg);
+  text-shadow: 0 0 14px rgba(226, 233, 236, 0.75);
+}
+
+
+
+
 .institutional-form__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

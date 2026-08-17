@@ -295,7 +295,7 @@
   }
 }
 
-/* ---- Placeholder visual (imagens/vídeo) ---- */
+/* ---- Placeholder visual ---- */
 .placeholder-box {
   display: flex;
   flex-direction: column;

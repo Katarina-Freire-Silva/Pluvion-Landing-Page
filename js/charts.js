@@ -1,13 +1,10 @@
 /**
  * charts.js
  * Renderiza os gráficos da seção "Pesquisa de campo" usando Chart.js.
- * Os dados abaixo são placeholders estruturados — SUBSTITUIR pelos dados
- * reais da pesquisa de campo assim que estiverem disponíveis.
  */
 
 window.Pluvion = window.Pluvion || {};
 
-// SUBSTITUIR PELOS DADOS REAIS DA PESQUISA DE CAMPO
 const researchData = {
   frequenciaAlagamentos: {
     labels: ['Nunca', 'Raramente', 'Às vezes', 'Frequentemente', 'Sempre'],

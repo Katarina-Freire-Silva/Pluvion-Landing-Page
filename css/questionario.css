@@ -44,7 +44,7 @@
   transition: width var(--transition-base);
 }
 
-/* ---- Passos do quiz (um visível por vez) ---- */
+/* ---- Passos do quiz ---- */
 .quiz-panel {
   position: relative;
 }

@@ -18,7 +18,7 @@ Pluvion.initDeviceShowcase = function () {
     'video/sae-video-3.mp4',
   ];
 
-  const IMAGE_DURATION = 4000; // ms que a imagem fica visível antes de começar os vídeos
+  const IMAGE_DURATION = 4000; 
   let index = 0;
   let imageTimer = null;
 
@@ -37,7 +37,6 @@ Pluvion.initDeviceShowcase = function () {
     imageEl.classList.remove('is-active');
     videoEl.classList.add('is-active');
     videoEl.play().catch(() => {
-      // Se o navegador bloquear o autoplay, volta pra imagem em vez de travar.
       showImage();
     });
   }
@@ -46,7 +45,7 @@ Pluvion.initDeviceShowcase = function () {
     index += 1;
     if (index >= videos.length) {
       index = 0;
-      showImage(); // completou o ciclo — volta pra imagem
+      showImage(); 
     } else {
       playNextVideo();
     }

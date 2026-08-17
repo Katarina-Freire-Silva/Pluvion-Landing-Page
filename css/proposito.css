@@ -72,7 +72,7 @@
   padding-top: var(--space-sm);
 }
 
-/* Fallback simples para navegadores sem suporte a grid-template-rows animável */
+/* Fallback simples */
 @supports not (grid-template-rows: 0fr) {
   .purpose-card__detail {
     max-height: 0;

@@ -56,7 +56,6 @@ p {
   line-height: var(--lh-snug);
 }
 
-/* Eyebrow — pequeno rótulo em caixa alta, usado como identificador de seção */
 .eyebrow {
   display: inline-flex;
   align-items: center;

@@ -78,14 +78,13 @@ table {
   border-collapse: collapse;
 }
 
-/* Foco visível e consistente para navegação por teclado */
 :focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
   border-radius: 4px;
 }
 
-/* Utilitário de acessibilidade — esconde visualmente mas mantém no leitor de tela */
+/* Acessibilidade */
 .sr-only {
   position: absolute;
   width: 1px;

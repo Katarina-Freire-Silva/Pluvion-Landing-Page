@@ -33,7 +33,7 @@
   gap: var(--space-sm);
 }
 
-/* ---- CTA de destaque para o questionário — não substitui os CTAs acima ---- */
+/* ---- Questionário ---- */
 .hero__quiz-cta {
   display: inline-flex;
   align-items: center;
@@ -80,7 +80,7 @@
   }
 }
 
-/* ---- Card de status (representação visual) ---- */
+/* ---- Card de status ---- */
 .status-card {
   position: relative;
   border-radius: var(--radius-lg);

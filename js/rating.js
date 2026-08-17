@@ -1,7 +1,6 @@
 /**
  * rating.js
- * Widget de avaliação por estrelas (Google Material Symbols) com
- * mensagem flutuante de agradecimento — sem usar alert().
+ * Widget de avaliação por estrelas com mensagem flutuante.
  */
 
 window.Pluvion = window.Pluvion || {};

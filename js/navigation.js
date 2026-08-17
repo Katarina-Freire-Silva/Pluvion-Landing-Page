@@ -1,7 +1,7 @@
 /**
  * navigation.js
  * Scroll suave por âncora, estado ativo do menu, comportamento do header
- * durante o scroll e menu mobile (abrir/fechar, Escape, foco).
+ * durante o scroll e menu mobile.
  */
 
 window.Pluvion = window.Pluvion || {};

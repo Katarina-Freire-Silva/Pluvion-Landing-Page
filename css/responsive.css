@@ -1,8 +1,6 @@
 /* ==========================================================================
    RESPONSIVIDADE GERAL
    Ajustes globais que não pertencem a uma seção específica.
-   Regras responsivas de cada seção vivem em seu próprio arquivo;
-   este arquivo cobre ritmo geral (espaçamento, navegação, tipografia).
    ========================================================================== */
 
 @media (max-width: 1080px) {
@@ -24,7 +22,7 @@
     bottom: 0;
     width: 100%;
     height: calc(100vh - 64px);
-    background-color: #FBFCFC; /* fallback opaco */
+    background-color: #FBFCFC; 
     background: var(--color-background);
     box-shadow: var(--shadow-lg);
     overflow-y: auto;
