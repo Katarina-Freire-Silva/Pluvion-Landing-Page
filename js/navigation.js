@@ -7,17 +7,17 @@
 window.Pluvion = window.Pluvion || {};
 
 Pluvion.initNavigation = function () {
-  const header = document.querySelector('.site-header');
-  const nav = document.querySelector('.main-nav');
-  const toggle = document.querySelector('.menu-toggle');
-  const navLinks = Array.from(document.querySelectorAll('.main-nav__link'));
+  const header = document.querySelector('.cabecalho-site');
+  const nav = document.querySelector('.navegacao-principal');
+  const toggle = document.querySelector('.alternar-menu');
+  const navLinks = Array.from(document.querySelectorAll('.link-navegacao-principal'));
   const sections = navLinks
     .map((link) => document.querySelector(link.getAttribute('href')))
     .filter(Boolean);
 
   // ---- Header sticky com sombra ao rolar ----
   const onScroll = () => {
-    header?.classList.toggle('is-scrolled', window.scrollY > 8);
+    header?.classList.toggle('rolado', window.scrollY > 8);
   };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
@@ -25,13 +25,13 @@ Pluvion.initNavigation = function () {
   // ---- Menu mobile ----
   const closeMenu = () => {
     toggle?.setAttribute('aria-expanded', 'false');
-    nav?.classList.remove('is-open');
+    nav?.classList.remove('aberto');
     document.body.style.removeProperty('overflow');
   };
 
   const openMenu = () => {
     toggle?.setAttribute('aria-expanded', 'true');
-    nav?.classList.add('is-open');
+    nav?.classList.add('aberto');
     document.body.style.overflow = 'hidden';
   };
 
@@ -56,7 +56,7 @@ Pluvion.initNavigation = function () {
           if (!entry.isIntersecting) return;
           const id = entry.target.getAttribute('id');
           navLinks.forEach((link) => {
-            link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
+            link.classList.toggle('ativo', link.getAttribute('href') === `#${id}`);
           });
         });
       },

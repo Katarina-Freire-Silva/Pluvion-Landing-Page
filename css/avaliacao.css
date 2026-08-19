@@ -14,12 +14,12 @@
   gap: var(--space-sm);
 }
 
-.avaliacao .container {
+.avaliacao .conteiner {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: var(--space-md);
 }
 
-.avaliacao__panel {
+.painel-avaliacao {
   max-width: 480px;
   margin-inline: auto;
   margin-block: var(--space-lg);
@@ -27,13 +27,13 @@
 }
 
 
-.avaliacao__title {
+.titulo-avaliacao {
   font-size: var(--fs-lg);
   margin-bottom: var(--space-md);
   color: var(--color-surface);
 }
 
-.star-rating {
+.avaliacao-estrelas {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,7 @@
   margin-bottom: var(--space-md);
 }
 
-.star-rating.is-shake {
+.avaliacao-estrelas.tremendo {
   animation: star-shake 0.4s ease;
 }
 
@@ -51,30 +51,30 @@
   75% { transform: translateX(6px); }
 }
 
-.star-rating__star {
+.estrela-avaliacao {
   color: var(--color-border-strong);
   transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
-.star-rating__star:hover {
+.estrela-avaliacao:hover {
   transform: scale(1.12);
 }
 
-.star-rating__star .material-symbols-outlined {
+.estrela-avaliacao .material-symbols-outlined {
   font-size: 34px;
   font-variation-settings: 'FILL' 0;
 }
 
-.star-rating__star.is-filled {
+.estrela-avaliacao.preenchido {
   color: var(--color-warning);
 }
 
-.star-rating__star.is-filled .material-symbols-outlined {
+.estrela-avaliacao.preenchido .material-symbols-outlined {
   font-variation-settings: 'FILL' 1;
 }
 
 /* ---- Mensagem flutuante de agradecimento ---- */
-.rating-toast {
+.aviso-avaliacao {
   position: fixed;
   left: 50%;
   bottom: var(--space-lg);
@@ -93,28 +93,28 @@
   transition: opacity var(--transition-base), transform var(--transition-base);
 }
 
-.rating-toast.is-visible {
+.aviso-avaliacao.visivel {
   opacity: 1;
   transform: translate(-50%, 0);
 }
 
-.rating-toast .material-symbols-outlined {
+.aviso-avaliacao .material-symbols-outlined {
   color: var(--color-warning);
   font-size: 20px;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .star-rating.is-shake {
+  .avaliacao-estrelas.tremendo {
     animation: none;
   }
 }
 
 @media (max-width: 560px) {
-  .avaliacao__panel {
+  .painel-avaliacao {
     padding: var(--space-md);
     margin-inline: var(--space-sm);
   }
-  .rating-toast {
+  .aviso-avaliacao {
     left: var(--space-sm);
     right: var(--space-sm);
     transform: translateY(16px);
@@ -122,7 +122,7 @@
     justify-content: center;
     text-align: center;
   }
-  .rating-toast.is-visible {
+  .aviso-avaliacao.visivel {
     transform: translateY(0);
   }
 }

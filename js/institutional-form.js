@@ -32,21 +32,21 @@ function setLoading(form, isLoading) {
   const submitBtn = form.querySelector('[type="submit"]');
   if (!submitBtn) return;
   submitBtn.disabled = isLoading;
-  submitBtn.classList.toggle('is-loading', isLoading);
+  submitBtn.classList.toggle('carregando', isLoading);
 }
 
 function showStatus(form, type, message) {
-  const statusEl = form.querySelector('.form-status');
+  const statusEl = form.querySelector('.status-formulario');
   if (!statusEl) return;
   statusEl.textContent = message;
-  statusEl.classList.remove('form-status--success', 'form-status--error');
-  statusEl.classList.add(`form-status--${type}`, 'is-visible');
+  statusEl.classList.remove('status-formulario-sucesso', 'status-formulario-erro');
+  statusEl.classList.add(`status-formulario-${type === 'success' ? 'sucesso' : 'erro'}`, 'visivel');
 }
 
 function hideStatus(form) {
-  const statusEl = form.querySelector('.form-status');
+  const statusEl = form.querySelector('.status-formulario');
   if (!statusEl) return;
-  statusEl.classList.remove('is-visible');
+  statusEl.classList.remove('visivel');
 }
 
 async function submitInstitutionalRequest(payload) {
@@ -98,7 +98,7 @@ function handleSubmit(form) {
     Pluvion.showFieldErrors(form, errors);
 
     if (!valid) {
-      const firstErrorField = form.querySelector('.field.has-error input, .field.has-error select, .field.has-error textarea');
+      const firstErrorField = form.querySelector('.campo.com-erro input, .campo.com-erro select, .campo.com-erro textarea');
       firstErrorField?.focus();
       return;
     }
@@ -138,7 +138,7 @@ function handleSubmit(form) {
 }
 
 Pluvion.initInstitutionalForm = function () {
-  const form = document.querySelector('.institutional-form');
+  const form = document.querySelector('.formulario-institucional');
   if (!form) return;
   handleSubmit(form);
 };

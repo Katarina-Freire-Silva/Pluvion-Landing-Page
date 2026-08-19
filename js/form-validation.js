@@ -53,17 +53,17 @@ Pluvion.validateForm = function (form, rules) {
 };
 
 Pluvion.showFieldErrors = function (form, errors) {
-  form.querySelectorAll('.field').forEach((fieldWrap) => {
-    fieldWrap.classList.remove('has-error');
+  form.querySelectorAll('.campo').forEach((fieldWrap) => {
+    fieldWrap.classList.remove('com-erro');
   });
 
   Object.entries(errors).forEach(([fieldName, message]) => {
     const field = form.elements.namedItem(fieldName);
     if (!field) return;
-    const fieldWrap = field.closest('.field');
+    const fieldWrap = field.closest('.campo');
     if (!fieldWrap) return;
-    fieldWrap.classList.add('has-error');
-    const errorEl = fieldWrap.querySelector('.field-error');
+    fieldWrap.classList.add('com-erro');
+    const errorEl = fieldWrap.querySelector('.erro-campo');
     if (errorEl) errorEl.textContent = message;
   });
 };

@@ -8,30 +8,30 @@
   color: #fff;
 }
 
-.instituicoes__intro {
+.introducao-instituicoes {
   max-width: 40rem;
   margin-bottom: var(--space-xl);
 }
 
-.instituicoes__intro .section-title {
+.introducao-instituicoes .titulo-secao {
   color: #fff;
 }
 
-.instituicoes__list {
+.lista-instituicoes {
   margin-top: var(--space-md);
   display: flex;
   flex-direction: column;
   gap: var(--space-2xs);
 }
 
-.instituicoes__list li {
+.lista-instituicoes li {
   display: flex;
   gap: var(--space-2xs);
   font-size: var(--fs-sm);
   color: var(--color-muted-on-dark);
 }
 
-.instituicoes__list li::before {
+.lista-instituicoes li::before {
   content: "";
   width: 6px;
   height: 6px;
@@ -41,46 +41,46 @@
   flex-shrink: 0;
 }
 
-.institutional-panel {
+.painel-institucional {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
 }
 
-.institutional-panel__title {
+.titulo-painel-institucional {
   font-size: var(--fs-lg);
   color: #fff;
   margin-bottom: var(--space-md);
 }
 
 /* ---- Formulário sobre fundo escuro ---- */
-.institutional-form .field label {
+.formulario-institucional .campo label {
   color: rgba(255, 255, 255, 0.82);
 }
 
-.institutional-form .field input,
-.institutional-form .field select,
-.institutional-form .field textarea {
+.formulario-institucional .campo input,
+.formulario-institucional .campo select,
+.formulario-institucional .campo textarea {
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.16);
   color: #fff;
 }
 
-.institutional-form .field input::placeholder,
-.institutional-form .field textarea::placeholder {
+.formulario-institucional .campo input::placeholder,
+.formulario-institucional .campo textarea::placeholder {
   color: rgba(255, 255, 255, 0.35);
 }
 
-.institutional-form .field-hint {
+.formulario-institucional .dica-campo {
   color: rgba(255, 255, 255, 0.45);
 }
 
-.institutional-form .checkbox-field label {
+.formulario-institucional .campo-selecao label {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.institutional-form {
+.formulario-institucional {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
@@ -104,13 +104,13 @@
 
 
 
-.institutional-form__grid {
+.grade-formulario-institucional {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-sm);
 }
 
-.institutional-form__actions {
+.acoes-formulario-institucional {
   margin-top: var(--space-2xs);
   display: flex;
   align-items: center;
@@ -119,7 +119,7 @@
 }
 
 @media (max-width: 1080px) {
-  .instituicoes__grid {
+  .grade-instituicoes {
     display: flex;
     flex-direction: column;
     gap: var(--space-xl);
@@ -127,7 +127,7 @@
 }
 
 @media (max-width: 560px) {
-  .institutional-form__grid {
+  .grade-formulario-institucional {
     grid-template-columns: 1fr;
   }
 }

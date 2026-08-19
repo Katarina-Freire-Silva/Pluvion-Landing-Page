@@ -6,7 +6,7 @@
 window.Pluvion = window.Pluvion || {};
 
 Pluvion.initVideoPitch = function () {
-  const video = document.querySelector('.video-pitch video');
+  const video = document.querySelector('.video-apresentacao video');
   if (!video) return;
 
   const observer = new IntersectionObserver(

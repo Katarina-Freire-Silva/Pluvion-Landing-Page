@@ -2,39 +2,39 @@
    HERO
    ========================================================================== */
 
-.hero {
+.destaque {
   padding-block: var(--space-2xl) var(--space-2xl);
   overflow: hidden;
 }
 
-.hero__inner {
+.interno-destaque {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: var(--space-2xl);
   align-items: center;
 }
 
-.hero__eyebrow {
+.chamada-destaque {
   margin-bottom: var(--space-sm);
 }
 
-.hero__title {
+.titulo-destaque {
   margin-bottom: var(--space-md);
 }
 
-.hero__lead {
+.descricao-destaque {
   max-width: 34rem;
   margin-bottom: var(--space-lg);
 }
 
-.hero__actions {
+.acoes-destaque {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-sm);
 }
 
 /* ---- Questionário ---- */
-.hero__quiz-cta {
+.chamada-questionario-destaque {
   display: inline-flex;
   align-items: center;
   gap: var(--space-xs);
@@ -50,13 +50,13 @@
   transition: border-color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
 }
 
-.hero__quiz-cta:hover {
+.chamada-questionario-destaque:hover {
   border-color: var(--color-accent-green-start);
   background: rgba(39, 156, 107, 0.16);
   transform: translateY(-1px);
 }
 
-.hero__quiz-cta-badge {
+.etiqueta-questionario-destaque {
   background: var(--color-accent-green-start);
   color: #fff;
   font-family: "Josefin Sans", sans-serif;
@@ -69,19 +69,19 @@
   flex-shrink: 0;
 }
 
-.hero__quiz-cta .material-symbols-outlined {
+.chamada-questionario-destaque .material-symbols-outlined {
   font-size: 18px;
   flex-shrink: 0;
 }
 
 @media (max-width: 560px) {
-  .hero__quiz-cta {
+  .chamada-questionario-destaque {
     max-width: 100%;
   }
 }
 
 /* ---- Card de status ---- */
-.status-card {
+.cartao-status {
   position: relative;
   border-radius: var(--radius-lg);
   font-family: "Josefin Sans", sans-serif;
@@ -96,7 +96,7 @@
   isolation: isolate;
 }
 
-.status-card::before {
+.cartao-status::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -107,25 +107,25 @@
   z-index: -1;
 }
 
-.status-card__top {
+.topo-cartao-status {
   display: flex;
   flex-direction: column;
   gap: var(--space-2xs);
 }
 
-.status-card__label {
+.rotulo-cartao-status {
   font-size: var(--fs-eyebrow);
   letter-spacing: var(--tracking-eyebrow);
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.72);
 }
 
-.status-card__level {
+.nivel-cartao-status {
   font-size: var(--fs-4xl);
   font-weight: 400;
 }
 
-.status-card__meta {
+.metadados-cartao-status {
   font-size: var(--fs-sm);
   color: rgba(255, 255, 255, 0.82);
   display: flex;
@@ -134,7 +134,7 @@
   flex-wrap: wrap;
 }
 
-.status-card__dot {
+.ponto-cartao-status {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -148,13 +148,13 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .status-card__dot {
+  .ponto-cartao-status {
     animation: none;
   }
 }
 
 @media (max-width: 1080px) {
-  .hero__inner {
+  .interno-destaque {
     grid-template-columns: 1fr;
   }
 }

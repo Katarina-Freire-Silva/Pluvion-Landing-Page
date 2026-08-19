@@ -8,44 +8,44 @@
   color: #fff;
 }
 
-.problema .section-head {
+.problema .cabecalho-secao {
   max-width: 44rem;
 }
 
-.problema .section-title {
+.problema .titulo-secao {
   color: #fff;
 }
 
-.problema__grid {
+.grade-problema {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-md);
   margin-bottom: var(--space-2xl);
 }
 
-.problema__card {
+.cartao-problema {
   background: var(--color-steel-deep);
   border-radius: var(--radius-md);
   padding: var(--space-md);
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.problema__card h3 {
+.cartao-problema h3 {
   color: #fff;
   margin-bottom: var(--space-2xs);
 }
 
-.problema__card p {
+.cartao-problema p {
   color: rgba(255, 255, 255, 0.68);
   font-size: var(--fs-sm);
 }
 
 /* ---- Carrossel de notícias ---- */
-.news {
+.noticias {
   margin-top: var(--space-lg);
 }
 
-.news__head {
+.cabecalho-noticias {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -53,30 +53,30 @@
   margin-bottom: var(--space-md);
 }
 
-.news__head h3 {
+.cabecalho-noticias h3 {
   color: #fff;
 }
 
-.news-carousel {
+.carrossel-noticias {
   position: relative;
 }
 
-.news-carousel__viewport {
+.janela-carrossel-noticias {
   overflow: hidden;
   border-radius: var(--radius-md);
 }
 
-.news-carousel__track {
+.trilho-carrossel-noticias {
   display: flex;
   transition: transform var(--transition-super-slow);
   will-change: transform;
 }
 
-.news-carousel__track:focus-visible {
+.trilho-carrossel-noticias:focus-visible {
   outline-offset: 6px;
 }
 
-.news-card {
+.cartao-noticia {
   flex: 0 0 100%;
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -87,7 +87,7 @@
   color: var(--color-text);
 }
 
-.news-card__media {
+.midia-cartao-noticia {
   aspect-ratio: 16 / 10;
   background: var(--color-surface-alt);
   display: flex;
@@ -95,13 +95,13 @@
   justify-content: center;
 }
 
-.news-card__media img {
+.midia-cartao-noticia img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.news-card__body {
+.corpo-cartao-noticia {
   padding: var(--space-lg) var(--space-lg) var(--space-lg) 0;
   display: flex;
   flex-direction: column;
@@ -109,7 +109,7 @@
   gap: var(--space-2xs);
 }
 
-.news-card__meta {
+.metadados-cartao-noticia {
   display: flex;
   gap: var(--space-sm);
   font-family: "Josefin Sans", sans-serif;
@@ -119,7 +119,7 @@
   letter-spacing: var(--tracking-wide);
 }
 
-.news-card__title {
+.titulo-cartao-noticia {
   font-size: var(--fs-md);
   font-weight: 600;
   line-height: var(--lh-snug);
@@ -130,7 +130,7 @@
   overflow: hidden;
 }
 
-.news-card__excerpt {
+.resumo-cartao-noticia {
   font-size: var(--fs-sm);
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -138,7 +138,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.news-card__link {
+.link-cartao-noticia {
   margin-top: var(--space-2xs);
   font-size: var(--fs-sm);
   font-weight: 600;
@@ -148,19 +148,19 @@
   gap: 0.35em;
 }
 
-.news-carousel__controls {
+.controles-carrossel-noticias {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: var(--space-sm);
 }
 
-.news-carousel__arrows {
+.setas-carrossel-noticias {
   display: flex;
   gap: var(--space-2xs);
 }
 
-.carousel-btn {
+.botao-carrossel {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -172,17 +172,17 @@
   transition: background var(--transition-fast), border-color var(--transition-fast);
 }
 
-.carousel-btn:hover {
+.botao-carrossel:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-.news-carousel__dots {
+.pontos-carrossel-noticias {
   display: flex;
   gap: var(--space-2xs);
 }
 
-.news-carousel__dots button {
+.pontos-carrossel-noticias button {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -190,19 +190,19 @@
   transition: background var(--transition-fast), transform var(--transition-fast);
 }
 
-.news-carousel__dots button.is-active {
+.pontos-carrossel-noticias button.ativo {
   background: #fff;
   transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
-  .problema__grid {
+  .grade-problema {
     grid-template-columns: 1fr;
   }
-  .news-card {
+  .cartao-noticia {
     grid-template-columns: 1fr;
   }
-  .news-card__body {
+  .corpo-cartao-noticia {
     padding: 0 var(--space-md) var(--space-md);
   }
 }

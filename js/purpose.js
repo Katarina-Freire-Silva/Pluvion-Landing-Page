@@ -11,7 +11,7 @@ Pluvion.initPurposeCards = function () {
   if (!cards.length) return;
 
   cards.forEach((card) => {
-    const toggle = () => card.classList.toggle('is-expanded');
+    const toggle = () => card.classList.toggle('expandido');
 
     card.addEventListener('click', toggle);
     card.addEventListener('keydown', (event) => {

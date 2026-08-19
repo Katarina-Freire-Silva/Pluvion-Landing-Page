@@ -82,9 +82,9 @@ Pluvion.initCharts = async function () {
     Chart = await loadChartJs();
   } catch (error) {
     canvases.forEach((canvas) => {
-      const wrap = canvas.closest('.chart-card__canvas-wrap');
+      const wrap = canvas.closest('.area-grafico');
       if (wrap) {
-        wrap.innerHTML = '<p class="field-hint">Não foi possível carregar os gráficos agora.</p>';
+        wrap.innerHTML = '<p class="dica-campo">Não foi possível carregar os gráficos agora.</p>';
       }
     });
     return;

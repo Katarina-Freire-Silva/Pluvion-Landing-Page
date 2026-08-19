@@ -4,7 +4,7 @@
 
    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-   .josefin-sans {
+   .fonte-josefin {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -27,12 +27,12 @@ h1, h2, h3, h4 {
   letter-spacing: -0.01em;
 }
 
-.section-title {
+.titulo-secao {
   font-size: var(--fs-2xl);
   max-width: 46rem;
 }
 
-.hero-title {
+.titulo-principal {
   font-size: clamp(2.5rem, 4.5vw, var(--fs-4xl));
 }
 
@@ -51,12 +51,12 @@ p {
   line-height: var(--lh-normal);
 }
 
-.lead {
+.descricao {
   font-size: var(--fs-md);
   line-height: var(--lh-snug);
 }
 
-.eyebrow {
+.chamada {
   display: inline-flex;
   align-items: center;
   gap: var(--space-3xs);
@@ -68,15 +68,15 @@ p {
   font-weight: 600;
 }
 
-.eyebrow--on-dark {
+.chamada-fundo-escuro {
   color: var(--color-muted-on-dark);
 }
 
-.eyebrow--on-steel {
+.chamada-fundo-cinza {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.eyebrow::before {
+.chamada::before {
   content: "";
   width: 6px;
   height: 6px;
@@ -84,16 +84,16 @@ p {
   background: currentColor;
 }
 
-.mono-figure {
+.figura-mono {
   font-family: var(--font-mono);
 }
 
-.text-on-dark {
+.texto-fundo-escuro {
   color: var(--color-on-dark);
 }
 
-.text-on-dark p,
-.text-on-dark .muted-on-dark {
+.texto-fundo-escuro p,
+.texto-fundo-escuro .texto-suave-fundo-escuro {
   color: var(--color-muted-on-dark);
 }
 
@@ -102,6 +102,6 @@ strong {
   color: var(--color-text);
 }
 
-.text-on-dark strong {
+.texto-fundo-escuro strong {
   color: var(--color-on-dark);
 }

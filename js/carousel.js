@@ -6,14 +6,14 @@
 window.Pluvion = window.Pluvion || {};
 
 Pluvion.initCarousel = function () {
-  const root = document.querySelector('.news-carousel');
+  const root = document.querySelector('.carrossel-noticias');
   if (!root) return;
 
-  const track = root.querySelector('.news-carousel__track');
-  const slides = Array.from(root.querySelectorAll('.news-card'));
+  const track = root.querySelector('.trilho-carrossel-noticias');
+  const slides = Array.from(root.querySelectorAll('.cartao-noticia'));
   const prevBtn = root.querySelector('[data-carousel-prev]');
   const nextBtn = root.querySelector('[data-carousel-next]');
-  const dotsWrap = root.querySelector('.news-carousel__dots');
+  const dotsWrap = root.querySelector('.pontos-carrossel-noticias');
 
   if (!track || slides.length === 0) return;
 
@@ -33,7 +33,7 @@ Pluvion.initCarousel = function () {
 
   function update() {
     track.style.transform = `translateX(-${index * 100}%)`;
-    dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
+    dots.forEach((dot, i) => dot.classList.toggle('ativo', i === index));
     slides.forEach((slide, i) => {
       slide.setAttribute('aria-hidden', i === index ? 'false' : 'true');
     });

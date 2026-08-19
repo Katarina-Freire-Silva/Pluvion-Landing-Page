@@ -11,14 +11,14 @@ Pluvion.initRating = function () {
   const toast = document.querySelector('[data-rating-toast]');
   if (!widget || !submitBtn) return;
 
-  const stars = Array.from(widget.querySelectorAll('.star-rating__star'));
+  const stars = Array.from(widget.querySelectorAll('.estrela-avaliacao'));
   let selected = 0;
   let toastTimer = null;
 
   function paint(value) {
     stars.forEach((star, i) => {
       const filled = i < value;
-      star.classList.toggle('is-filled', filled);
+      star.classList.toggle('preenchido', filled);
       star.setAttribute('aria-checked', i === value - 1 ? 'true' : 'false');
     });
   }
@@ -37,17 +37,17 @@ Pluvion.initRating = function () {
 
   function showToast() {
     if (!toast) return;
-    toast.classList.add('is-visible');
+    toast.classList.add('visivel');
     window.clearTimeout(toastTimer);
     toastTimer = window.setTimeout(() => {
-      toast.classList.remove('is-visible');
+      toast.classList.remove('visivel');
     }, 3600);
   }
 
   submitBtn.addEventListener('click', () => {
     if (selected === 0) {
-      widget.classList.add('is-shake');
-      window.setTimeout(() => widget.classList.remove('is-shake'), 500);
+      widget.classList.add('tremendo');
+      window.setTimeout(() => widget.classList.remove('tremendo'), 500);
       return;
     }
     showToast();

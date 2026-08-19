@@ -2,7 +2,7 @@
    HEADER
    ========================================================================== */
 
-.site-header {
+.cabecalho-site {
   position: sticky;
   top: 0;
   z-index: var(--z-header);
@@ -13,12 +13,12 @@
   transition: border-color var(--transition-base), box-shadow var(--transition-base);
 }
 
-.site-header.is-scrolled {
+.cabecalho-site.rolado {
   border-bottom-color: var(--color-border);
   box-shadow: 0 4px 20px rgba(22, 35, 43, 0.05);
 }
 
-.site-header__inner {
+.interno-cabecalho-site {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,7 +26,7 @@
   padding-block: var(--space-md);
 }
 
-.brand {
+.marca {
   display: flex;
   align-items: center;
   gap: var(--space-3xs);
@@ -37,29 +37,29 @@
   flex-shrink: 0;
 }
 
-.brand__mark {
+.simbolo-marca {
   width: 25px;
   height: 25px;
   flex-shrink: 0;
 }
 
-.brand__wordmark {
+.nome-marca {
   height: 24px;
   width: auto;
   flex-shrink: 0;
 }
 
-.main-nav {
+.navegacao-principal {
   display: flex;
 }
 
-.main-nav__list {
+.lista-navegacao-principal {
   display: flex;
   align-items: center;
   gap: 1.25rem;
 }
 
-.main-nav__link {
+.link-navegacao-principal {
   font-size: var(--fs-base);
   color: var(--color-muted);
   font-weight: 500;
@@ -69,7 +69,7 @@
   white-space: nowrap;
 }
 
-.main-nav__link::after {
+.link-navegacao-principal::after {
   content: "";
   position: absolute;
   left: 0;
@@ -82,25 +82,25 @@
   transition: transform var(--transition-base);
 }
 
-.main-nav__link:hover {
+.link-navegacao-principal:hover {
   color: var(--color-text);
 }
 
-.main-nav__link.is-active {
+.link-navegacao-principal.ativo {
   color: var(--color-text);
 }
 
-.main-nav__link.is-active::after {
+.link-navegacao-principal.ativo::after {
   transform: scaleX(1);
 }
 
-.header-actions {
+.acoes-cabecalho {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
 }
 
-.menu-toggle {
+.alternar-menu {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +110,7 @@
   border-radius: var(--radius-sm);
 }
 
-.menu-toggle span {
+.alternar-menu span {
   display: block;
   width: 20px;
   height: 2px;
@@ -119,14 +119,14 @@
   transition: transform var(--transition-base), opacity var(--transition-base);
 }
 
-.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+.alternar-menu[aria-expanded="true"] span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
-.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+.alternar-menu[aria-expanded="true"] span:nth-child(2) {
   opacity: 0;
 }
 
-.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+.alternar-menu[aria-expanded="true"] span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }

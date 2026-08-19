@@ -39,64 +39,64 @@
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <a class="pular-navegacao" href="#principal">Pular para o conteúdo</a>
 
   <!-- ===================== HEADER ===================== -->
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a href="#intro" class="brand" aria-label="Pluvion — página inicial">
-        <img class="brand__mark" src="images/general/logo.svg"/>
-        <img class="brand__wordmark" src="images/general/Pluvion.svg" height="80" width="80"/>
+  <header class="cabecalho-site">
+    <div class="conteiner interno-cabecalho-site">
+      <a href="#introducao" class="marca" aria-label="Pluvion — página inicial">
+        <img class="simbolo-marca" src="images/general/logo.svg"/>
+        <img class="nome-marca" src="images/general/Pluvion.svg" height="80" width="80"/>
       </a>
 
-      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
-        <ul class="main-nav__list">
-          <li><a class="main-nav__link" href="#questionario">Participar</a></li>
-          <li><a class="main-nav__link" href="#problema">Problemática</a></li>
-          <li><a class="main-nav__link" href="#pesquisa">Pesquisa</a></li>
-          <li><a class="main-nav__link" href="#proposito">Propósito</a></li>
-          <li><a class="main-nav__link" href="#como-funciona">Funcionamento</a></li>
-          <li><a class="main-nav__link" href="#tecnologia">Tecnologia</a></li>
-          <li><a class="main-nav__link" href="#risco">Risco</a></li>
-          <li><a class="main-nav__link" href="#instituicoes">Instituições</a></li>
-          <li><a class="main-nav__link" href="#criadores">Criadores</a></li>
-          <li><a class="main-nav__link" href="#producoes">Produções</a></li>
+      <nav class="navegacao-principal" id="navegacao-principal" aria-label="Navegação principal">
+        <ul class="lista-navegacao-principal">
+          <li><a class="link-navegacao-principal" href="#questionario">Participar</a></li>
+          <li><a class="link-navegacao-principal" href="#problema">Problemática</a></li>
+          <li><a class="link-navegacao-principal" href="#pesquisa">Pesquisa</a></li>
+          <li><a class="link-navegacao-principal" href="#proposito">Propósito</a></li>
+          <li><a class="link-navegacao-principal" href="#como-funciona">Funcionamento</a></li>
+          <li><a class="link-navegacao-principal" href="#tecnologia">Tecnologia</a></li>
+          <li><a class="link-navegacao-principal" href="#risco">Risco</a></li>
+          <li><a class="link-navegacao-principal" href="#instituicoes">Instituições</a></li>
+          <li><a class="link-navegacao-principal" href="#criadores">Criadores</a></li>
+          <li><a class="link-navegacao-principal" href="#producoes">Produções</a></li>
         </ul>
       </nav>
 
-      <div class="header-actions">
-        <a href="#" class="btn btn-primary">Baixar o app</a>
-        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+      <div class="acoes-cabecalho">
+        <a href="#" class="botao botao-principal">Baixar o app</a>
+        <button class="alternar-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navegacao-principal">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main id="main">
+  <main id="principal">
     <!-- ===================== HERO ===================== -->
-    <section class="hero" id="intro"aria-label="Apresentação">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <p class="eyebrow hero__eyebrow">Monitoramento de enchentes em tempo real</p>
-          <h1 class="hero-title hero__title">A leitura do risco,<br />na altura do olhar.</h1>
-          <p class="lead hero__lead">
+    <section class="destaque" id="introducao"aria-label="Apresentação">
+      <div class="conteiner interno-destaque">
+        <div class="conteudo-destaque">
+          <p class="chamada chamada-destaque">Monitoramento de enchentes em tempo real</p>
+          <h1 class="titulo-principal titulo-destaque">A leitura do risco,<br />na altura do olhar.</h1>
+          <p class="descricao descricao-destaque">
             Pluvion conecta os sensores SAE (Sistema de Alerta de Enchentes) em locais próximos aos bueiros e áreas de risco, com a alertas
             personalizados destinados à população, podendo ser filtradospor rua, bairro e cidade —  assim, empresas detém o monitoramento contínuo e os usuários do aplicativo têm acesso a alertas em tempo real.
           </p>
-          <div class="hero__actions">
-            <a href="#" class="btn btn-primary">Baixar o app</a>
-            <a href="#" class="btn btn-secondary">Portal do Comprador</a>
+          <div class="acoes-destaque">
+            <a href="#" class="botao botao-principal">Baixar o app</a>
+            <a href="#" class="botao botao-secundario">Portal do Comprador</a>
           </div>
         </div>
 
-        <div class="hero__visual" aria-hidden="true">
-          <div class="status-card">
-            <div class="status-card__top">
-              <span class="status-card__label">Status da região</span>
-              <span class="status-card__level">SEM RISCO</span>
-              <span class="status-card__meta">
-                <span class="status-card__dot"></span>
+        <div class="visual-destaque" aria-hidden="true">
+          <div class="cartao-status">
+            <div class="topo-cartao-status">
+              <span class="rotulo-cartao-status">Status da região</span>
+              <span class="nivel-cartao-status">SEM RISCO</span>
+              <span class="metadados-cartao-status">
+                <span class="ponto-cartao-status"></span>
                 Nível baixo: 0,31 m · Atualizado há 4 min
               </span>
             </div>
@@ -106,40 +106,40 @@
     </section>
 
     <!-- ===================== QUESTIONÁRIO INTERATIVO ===================== -->
-    <section class="questionario reveal" id="questionario" aria-label="Questionário interativo">
-      <div class="container questionario__inner">
-        <div class="section-head">
-          <p class="eyebrow">Participação</p>
-          <h2 class="section-title">Antes de seguir, queremos ouvir você.</h2>
-          <p class="lead">Responda a cinco perguntas rápidas para saber se a sua realidade está sendo afetada pelas enchentes, como milhões de brasileiros — não se preocupe com cadastro ou com envio de dados, não compartilhamos nem recebemos nada.</p>
+    <section class="questionario aparecer" id="questionario" aria-label="Questionário interativo">
+      <div class="conteiner interno-questionario">
+        <div class="cabecalho-secao">
+          <p class="chamada">Participação</p>
+          <h2 class="titulo-secao">Antes de seguir, queremos ouvir você.</h2>
+          <p class="descricao">Responda a cinco perguntas rápidas para saber se a sua realidade está sendo afetada pelas enchentes, como milhões de brasileiros — não se preocupe com cadastro ou com envio de dados, não compartilhamos nem recebemos nada.</p>
         </div>
 
-        <div class="quiz" data-quiz>
-          <div class="quiz__progress" aria-hidden="true">
-            <div class="quiz__progress-bar" data-quiz-progress></div>
+        <div class="questionario-interativo" data-quiz>
+          <div class="progresso-questionario" aria-hidden="true">
+            <div class="barra-progresso-questionario" data-quiz-progress></div>
           </div>
 
-          <div class="quiz-panel">
-            <div class="quiz-step is-active" data-step="intro">
-              <p class="quiz-step__intro-text"> Em que parcela da sociedade brasileira você se encontra? Na que sofre constantemente com enchentes, ou na que apenas vê essa problemática atráves da mídia? Leva menos de 2 minutos para responder às cinco perguntas. Suas respostas ficam só nesta página, nada é salvo ou enviado para nenhum servidor.</p>
-              <button type="button" class="btn btn-primary" data-quiz-start>
+          <div class="painel-questionario">
+            <div class="etapa-questionario ativo" data-step="intro">
+              <p class="introducao-etapa-questionario"> Em que parcela da sociedade brasileira você se encontra? Na que sofre constantemente com enchentes, ou na que apenas vê essa problemática atráves da mídia? Leva menos de 2 minutos para responder às cinco perguntas. Suas respostas ficam só nesta página, nada é salvo ou enviado para nenhum servidor.</p>
+              <button type="button" class="botao botao-principal" data-quiz-start>
                 COMEÇAR
               </button>
             </div>
 
-            <div class="quiz-step" data-step="name">
-              <label class="quiz-step__label" for="quiz-name">Como você gostaria de ser chamado?</label>
-              <input type="text" id="quiz-name" class="quiz-step__input" placeholder="Digite a forma que deseja ser chamado" maxlength="24" autocomplete="off" />
-              <button type="button" class="btn btn-primary" data-quiz-next>
+            <div class="etapa-questionario" data-step="name">
+              <label class="rotulo-etapa-questionario" for="nome-questionario">Como você gostaria de ser chamado?</label>
+              <input type="text" id="nome-questionario" class="entrada-etapa-questionario" placeholder="Digite a forma que deseja ser chamado" maxlength="24" autocomplete="off" />
+              <button type="button" class="botao botao-principal" data-quiz-next>
                 CONTINUAR
               </button>
             </div>
 
-            <div class="quiz-questions" data-quiz-questions></div>
+            <div class="perguntas-questionario" data-quiz-questions></div>
 
-            <div class="quiz-step" data-step="result">
-              <div class="quiz-result" data-quiz-result></div>
-              <button type="button" class="btn btn-secondary" data-quiz-restart>
+            <div class="etapa-questionario" data-step="result">
+              <div class="resultado-questionario" data-quiz-result></div>
+              <button type="button" class="botao botao-secundario" data-quiz-restart>
                 <span class="material-symbols-outlined" aria-hidden="true">refresh</span>
                 Refazer o questionário
               </button>
@@ -151,25 +151,25 @@
 
     <!-- ===================== O PROBLEMA ===================== -->
     <section class="problema" id="problema">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow eyebrow--on-steel">O problema</p>
-          <h2 class="section-title">Os sistemas tradicionais de alerta ainda chegam depois que a água já subiu.</h2>
+      <div class="conteiner">
+        <div class="cabecalho-secao aparecer">
+          <p class="chamada chamada-fundo-cinza">O problema</p>
+          <h2 class="titulo-secao">Os sistemas tradicionais de alerta ainda chegam depois que a água já subiu.</h2>
         </div>
 
-        <div class="problema__grid">
+        <div class="grade-problema">
 
-          <article class="problema__card reveal">
+          <article class="cartao-problema aparecer">
             <h3>Chuvas cada vez mais intensas</h3>
             <p>Eventos climáticos extremos são mais frequentes e imprevisíveis, exigindo respostas mais rápidas do que os modelos tradicionais de monitoramento conseguem oferecer.</p>
           </article>
 
-          <article class="problema__card reveal">
+          <article class="cartao-problema aparecer">
             <h3>Falta de dados em tempo real</h3>
             <p>Grande parte das áreas de risco ainda não possui monitoramento contínuo do nível da água, o que atrasa a percepção do problema.</p>
           </article>
 
-          <article class="problema__card reveal">
+          <article class="cartao-problema aparecer">
             <h3>Alertas genéricos e tardios</h3>
             <p>Avisos amplos, sem recorte por rua ou bairro, dificultam a decisão individual no momento em que ela mais importa.</p>
           </article>
@@ -177,99 +177,99 @@
         </div>
 
         <!-- ---- Carrossel de notícias ---- -->
-        <div class="news reveal">
-          <div class="news__head">
+        <div class="noticias aparecer">
+          <div class="cabecalho-noticias">
             <h3>Enchentes e alagamentos na mídia</h3>
           </div>
 
-          <div class="news-carousel" role="region" aria-roledescription="carrossel" aria-label="Notícias sobre enchentes e alagamentos">
-            <div class="news-carousel__viewport">
-              <div class="news-carousel__track" tabindex="0">
+          <div class="carrossel-noticias" role="region" aria-roledescription="carrossel" aria-label="Notícias sobre enchentes e alagamentos">
+            <div class="janela-carrossel-noticias">
+              <div class="trilho-carrossel-noticias" tabindex="0">
 
-                <article class="news-card" aria-hidden="false">
-                  <div class="news-card__media">
+                <article class="cartao-noticia" aria-hidden="false">
+                  <div class="midia-cartao-noticia">
                     <img src="https://s2-g1.glbimg.com/6KXWi6SFvtdn-5eHSaH0PXn7D5E=/0x0:2000x1333/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/0/1/K0DEBnSzOUXc9llH49CQ/chuva-sp17.jpg" alt="Enchentes e alagamentos na mídia" loading="lazy" />
                   </div>
-                  <div class="news-card__body">
-                    <div class="news-card__meta">
+                  <div class="corpo-cartao-noticia">
+                    <div class="metadados-cartao-noticia">
                       <span>Por Redação g1 SP e TV Globo</span>
                       <span>09/03/2026 13h34</span>
                     </div>
-                    <h4 class="news-card__title">Número de mortos pela chuva chega a 21 no estado de São Paulo, diz Defesa Civil</h4>
-                    <p class="news-card__excerpt">Duas novas vítimas foram registradas nesse fim de semana, em razão dos temporais. A primeira delas foi Pedro Alves de França, que morreu no último sábado (7) em São Bernardo do Campo, na Grande SP, e outra em Sorocaba, no interior do estado.</p>
-                    <a class="news-card__link" href="https://g1.globo.com/sp/sao-paulo/noticia/2026/03/09/numero-de-mortos-pela-chuva-chega-a-21-no-estado-de-sao-paulo-diz-defesa-civil.ghtml">Ler matéria completa</a>
+                    <h4 class="titulo-cartao-noticia">Número de mortos pela chuva chega a 21 no estado de São Paulo, diz Defesa Civil</h4>
+                    <p class="resumo-cartao-noticia">Duas novas vítimas foram registradas nesse fim de semana, em razão dos temporais. A primeira delas foi Pedro Alves de França, que morreu no último sábado (7) em São Bernardo do Campo, na Grande SP, e outra em Sorocaba, no interior do estado.</p>
+                    <a class="link-cartao-noticia" href="https://g1.globo.com/sp/sao-paulo/noticia/2026/03/09/numero-de-mortos-pela-chuva-chega-a-21-no-estado-de-sao-paulo-diz-defesa-civil.ghtml">Ler matéria completa</a>
                   </div>
                 </article>
 
-                <article class="news-card" aria-hidden="true">
-                  <div class="news-card__media">
+                <article class="cartao-noticia" aria-hidden="true">
+                  <div class="midia-cartao-noticia">
                     <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/12/FTA20231223052.jpg?w=1200&h=900&crop=1" alt="Enchentes e alagamentos na mídia" loading="lazy" />
                   </div>
-                  <div class="news-card__body">
-                    <div class="news-card__meta">
+                  <div class="corpo-cartao-noticia">
+                    <div class="metadados-cartao-noticia">
                       <span>CNN Brasil, São Paulo</span>
                       <span>24/06/26 8h24</span>
                     </div>
-                    <h4 class="news-card__title">Chuva forte provoca desabamentos e alagamentos em SP; veja ocorrências</h4>
-                    <p class="news-card__excerpt">Bombeiros registram ao menos seis focos de inundação ou enchente e quatro chamados relacionados a desabamentos ou desmoronamentos. A chuva persistente que cai em São Paulo desde a manhã desta terça-feira (23) provocou estragos e transtornos aos moradores de cidades do estado.</p>
-                    <a class="news-card__link" href="https://www.cnnbrasil.com.br/nacional/sudeste/sp/chuva-forte-provoca-desabamentos-e-alagamentos-em-sp-veja-ocorrencias/">Ler matéria completa</a>
+                    <h4 class="titulo-cartao-noticia">Chuva forte provoca desabamentos e alagamentos em SP; veja ocorrências</h4>
+                    <p class="resumo-cartao-noticia">Bombeiros registram ao menos seis focos de inundação ou enchente e quatro chamados relacionados a desabamentos ou desmoronamentos. A chuva persistente que cai em São Paulo desde a manhã desta terça-feira (23) provocou estragos e transtornos aos moradores de cidades do estado.</p>
+                    <a class="link-cartao-noticia" href="https://www.cnnbrasil.com.br/nacional/sudeste/sp/chuva-forte-provoca-desabamentos-e-alagamentos-em-sp-veja-ocorrencias/">Ler matéria completa</a>
                   </div>
                 </article>
 
-                <article class="news-card" aria-hidden="true">
-                  <div class="news-card__media">
+                <article class="cartao-noticia" aria-hidden="true">
+                  <div class="midia-cartao-noticia">
                     <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/03/WhatsApp-Image-2026-03-06-at-16.07.14-e1772824396424.jpeg?w=1200&h=900&crop=0&quality=90" alt="Enchentes e alagamentos na mídia" loading="lazy" />
                   </div>
-                  <div class="news-card__body">
-                    <div class="news-card__meta">
+                  <div class="corpo-cartao-noticia">
+                    <div class="metadados-cartao-noticia">
                       <span>CNN Brasil, São Paulo</span>
                       <span>22/06/26 16h59</span>
                     </div>
-                    <h4 class="news-card__title">Mesmo com El Niño, São Paulo continua sem rota de fuga</h4>
-                    <p class="news-card__excerpt">São Paulo sinaliza áreas sujeitas a alagamentos, mas ainda não orienta como escapar delas. Em uma cidade mais exposta a eventos extremos, a ausência de rotas de fuga transforma um aviso importante em uma informação incompleta.</p>
-                    <a class="news-card__link" href="https://www.cnnbrasil.com.br/blogs/pedro-cortes/nacional/sudeste/sp/mesmo-com-el-nino-sao-paulo-continua-sem-rota-de-fuga/">Ler matéria completa</a>
+                    <h4 class="titulo-cartao-noticia">Mesmo com El Niño, São Paulo continua sem rota de fuga</h4>
+                    <p class="resumo-cartao-noticia">São Paulo sinaliza áreas sujeitas a alagamentos, mas ainda não orienta como escapar delas. Em uma cidade mais exposta a eventos extremos, a ausência de rotas de fuga transforma um aviso importante em uma informação incompleta.</p>
+                    <a class="link-cartao-noticia" href="https://www.cnnbrasil.com.br/blogs/pedro-cortes/nacional/sudeste/sp/mesmo-com-el-nino-sao-paulo-continua-sem-rota-de-fuga/">Ler matéria completa</a>
                   </div>
                 </article>
 
-                <article class="news-card" aria-hidden="true">
-                  <div class="news-card__media">
+                <article class="cartao-noticia" aria-hidden="true">
+                  <div class="midia-cartao-noticia">
                     <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/4CCD/production/_110816691_hi059868799.jpg.webp" alt="Enchentes e alagamentos na mídia" loading="lazy" />
                   </div>
-                  <div class="news-card__body">
-                    <div class="news-card__meta">
+                  <div class="corpo-cartao-noticia">
+                    <div class="metadados-cartao-noticia">
                       <span>Pública, Brasil</span>
                       <span>24/02/23 12h08</span>
                     </div>
-                    <h4 class="news-card__title">Chuva “não dá conta de explicar o desastre” no litoral norte de SP, diz especialista</h4>
-                    <p class="news-card__excerpt">Entre a madrugada de sábado (18) e a noite de domingo (19), choveu em São Sebastião e Bertioga, no litoral Norte de São Paulo, mais do que em janeiro e fevereiro de 2022, o que já tem sido classificado por meteorologistas como um “evento climático extremo”. De fato, a quantidade de água que despencou do céu na região foi atípica, mas não explica os 54 mortos, mais de 4 mil pessoas desalojadas e dezenas de desaparecidos.</p>
-                    <a class="news-card__link" href="https://apublica.org/2023/02/chuva-nao-da-conta-de-explicar-o-desastre-no-litoral-norte-de-sp-diz-especialista/">Ler matéria completa</a>
+                    <h4 class="titulo-cartao-noticia">Chuva “não dá conta de explicar o desastre” no litoral norte de SP, diz especialista</h4>
+                    <p class="resumo-cartao-noticia">Entre a madrugada de sábado (18) e a noite de domingo (19), choveu em São Sebastião e Bertioga, no litoral Norte de São Paulo, mais do que em janeiro e fevereiro de 2022, o que já tem sido classificado por meteorologistas como um “evento climático extremo”. De fato, a quantidade de água que despencou do céu na região foi atípica, mas não explica os 54 mortos, mais de 4 mil pessoas desalojadas e dezenas de desaparecidos.</p>
+                    <a class="link-cartao-noticia" href="https://apublica.org/2023/02/chuva-nao-da-conta-de-explicar-o-desastre-no-litoral-norte-de-sp-diz-especialista/">Ler matéria completa</a>
                   </div>
                 </article>
 
-                <article class="news-card" aria-hidden="true">
-                  <div class="news-card__media">
+                <article class="cartao-noticia" aria-hidden="true">
+                  <div class="midia-cartao-noticia">
                     <img src="https://f.i.uol.com.br/fotografia/2020/02/10/15813659295e41baa9912dd_1581365929_3x2_xl.jpg" alt="Enchentes e alagamentos na mídia" loading="lazy" />
                   </div>
-                  <div class="news-card__body">
-                    <div class="news-card__meta">
+                  <div class="corpo-cartao-noticia">
+                    <div class="metadados-cartao-noticia">
                       <span>Mongababy, Brasil</span>
                       <span>23/01/25</span>
                     </div>
-                    <h4 class="news-card__title">Desastres climáticos no Brasil aumentaram 460% em relação aos anos 1990</h4>
-                    <p class="news-card__excerpt">De 1991 a 2023, cada aumento em 0,1 °C na temperatura média global do ar provocou 360 novos registros de desastres climáticos no Brasil, incluindo secas severas, enchentes e tempestades; a consequente elevação na superfície do oceano gerou 584 novos casos. Nesse período, houve um crescimento médio de cem novos eventos extremos por ano no país, o que consequentemente dilatou os prejuízos econômicos que se seguiram.</p>
-                    <a class="news-card__link" href="https://brasil.mongabay.com/2025/01/desastres-climaticos-no-brasil-aumentaram-460-em-relacao-aos-anos-1990/">Ler matéria completa</a>
+                    <h4 class="titulo-cartao-noticia">Desastres climáticos no Brasil aumentaram 460% em relação aos anos 1990</h4>
+                    <p class="resumo-cartao-noticia">De 1991 a 2023, cada aumento em 0,1 °C na temperatura média global do ar provocou 360 novos registros de desastres climáticos no Brasil, incluindo secas severas, enchentes e tempestades; a consequente elevação na superfície do oceano gerou 584 novos casos. Nesse período, houve um crescimento médio de cem novos eventos extremos por ano no país, o que consequentemente dilatou os prejuízos econômicos que se seguiram.</p>
+                    <a class="link-cartao-noticia" href="https://brasil.mongabay.com/2025/01/desastres-climaticos-no-brasil-aumentaram-460-em-relacao-aos-anos-1990/">Ler matéria completa</a>
                   </div>
                 </article>
               </div>
             </div>
 
-            <div class="news-carousel__controls">
-              <div class="news-carousel__dots" role="tablist" aria-label="Selecionar notícia"></div>
-              <div class="news-carousel__arrows">
-                <button type="button" class="carousel-btn" data-carousel-prev aria-label="Notícia anterior">
+            <div class="controles-carrossel-noticias">
+              <div class="pontos-carrossel-noticias" role="tablist" aria-label="Selecionar notícia"></div>
+              <div class="setas-carrossel-noticias">
+                <button type="button" class="botao-carrossel" data-carousel-prev aria-label="Notícia anterior">
                   <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
                 </button>
-                <button type="button" class="carousel-btn" data-carousel-next aria-label="Próxima notícia">
+                <button type="button" class="botao-carrossel" data-carousel-next aria-label="Próxima notícia">
                   <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
                 </button>
               </div>
@@ -281,95 +281,95 @@
 
     <!-- ===================== PESQUISA DE CAMPO ===================== -->
     <section class="pesquisa" id="pesquisa">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Pesquisa de campo</p>
-          <h2 class="section-title">O que ouvimos de quem convive com o problema.</h2>
-          <p class="lead">Entre nossas fontes de pesquisa de campo, aplicamos um levantamento com moradores de áreas historicamente afetadas por enchentes e alagamentos. Os dados abaixo resumem os principais achados.</p>
+      <div class="conteiner">
+        <div class="cabecalho-secao aparecer">
+          <p class="chamada">Pesquisa de campo</p>
+          <h2 class="titulo-secao">O que ouvimos de quem convive com o problema.</h2>
+          <p class="descricao">Entre nossas fontes de pesquisa de campo, aplicamos um levantamento com moradores de áreas historicamente afetadas por enchentes e alagamentos. Os dados abaixo resumem os principais achados.</p>
         </div>
 
-        <div class="pesquisa__stats reveal">
-          <div class="card stat-card">
-            <div class="stat-card__value">206</div>
-            <p class="stat-card__label">Pessoas entrevistadas <br><span class="field-hint">2026</span></p>
+        <div class="estatisticas-pesquisa aparecer">
+          <div class="cartao cartao-estatistica">
+            <div class="valor-estatistica">206</div>
+            <p class="rotulo-estatistica">Pessoas entrevistadas <br><span class="dica-campo">2026</span></p>
           </div>
-          <div class="card stat-card">
-            <div class="stat-card__value">7</div>
-            <p class="stat-card__label">Regiões participantes <br><span class="field-hint">2026</span></p>
+          <div class="cartao cartao-estatistica">
+            <div class="valor-estatistica">7</div>
+            <p class="rotulo-estatistica">Regiões participantes <br><span class="dica-campo">2026</span></p>
           </div>
-          <div class="card stat-card">
-            <div class="stat-card__value">66%</div>
-            <p class="stat-card__label">Relatam alagamento recorrente <br><span class="field-hint">2026</span></p>
+          <div class="cartao cartao-estatistica">
+            <div class="valor-estatistica">66%</div>
+            <p class="rotulo-estatistica">Relatam alagamento recorrente <br><span class="dica-campo">2026</span></p>
           </div>
         </div>
 
-        <div class="charts-grid">
+        <div class="grade-graficos">
 
-          <article class="card chart-card reveal">
-            <div class="chart-card__head">
+          <article class="cartao cartao-grafico aparecer">
+            <div class="cabecalho-cartao-grafico">
               <h3>Frequência de alagamentos relatada</h3>
-              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
+              <span class="fonte-cartao-grafico">Fonte — Autoria Própria (2026)</span>
             </div>
-            <div class="chart-card__canvas-wrap">
+            <div class="area-grafico">
               <canvas data-chart="bar" data-dataset="frequenciaAlagamentos" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de barras mostrando a frequência de alagamentos relatada pelos moradores entrevistados"></canvas>
             </div>
-            <p class="chart-card__interpretation">A maior parte dos respondentes relata sofrer com alagamentos na própria região, reforçando a necessidade de monitoramento contínuo.</p>
+            <p class="interpretacao-grafico">A maior parte dos respondentes relata sofrer com alagamentos na própria região, reforçando a necessidade de monitoramento contínuo.</p>
           </article>
 
-          <article class="card chart-card reveal">
-            <div class="chart-card__head">
+          <article class="cartao cartao-grafico aparecer">
+            <div class="cabecalho-cartao-grafico">
               <h3>Você costuma receber aviso antecipado de risco de enchente? </h3>
-              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
+              <span class="fonte-cartao-grafico">Fonte — Autoria Própria (2026)</span>
             </div>
-            <div class="chart-card__canvas-wrap">
+            <div class="area-grafico">
               <canvas data-chart="doughnut" data-dataset="tempoPercepcaoRisco" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de rosca mostrando se os entrevistadoscostumam receber avisos antecipados de risco de enchente"></canvas>
             </div>
-            <p class="chart-card__interpretation">Metade dos moradores só recebe o aviso quando a água já está na rua ou dentro do imóvel — exatamente o intervalo que um alerta antecipado busca reduzir.</p>
+            <p class="interpretacao-grafico">Metade dos moradores só recebe o aviso quando a água já está na rua ou dentro do imóvel — exatamente o intervalo que um alerta antecipado busca reduzir.</p>
           </article>
 
-          <article class="card chart-card reveal">
-            <div class="chart-card__head">
+          <article class="cartao cartao-grafico aparecer">
+            <div class="cabecalho-cartao-grafico">
               <h3>O sistema de drenagem da sua cidade funciona adequadamente? 
               </h3>
-              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
+              <span class="fonte-cartao-grafico">Fonte — Autoria Própria (2026)</span>
             </div>
-            <div class="chart-card__canvas-wrap">
+            <div class="area-grafico">
               <canvas data-chart="doughnut" data-dataset="sistemaDrenagem" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de rosca mostrando a percepção dos moradores sobre o funcionamento do sistema de drenagem"></canvas>
             </div>
-            <p class="chart-card__interpretation">O mal funcionamento do sistema de drenagem é uma preocupação significativa para a maioria dos moradores, além de ser um agravante para enchentes.</p>
+            <p class="interpretacao-grafico">O mal funcionamento do sistema de drenagem é uma preocupação significativa para a maioria dos moradores, além de ser um agravante para enchentes.</p>
           </article>
 
-          <article class="card chart-card reveal">
-            <div class="chart-card__head">
+          <article class="cartao cartao-grafico aparecer">
+            <div class="cabecalho-cartao-grafico">
               <h3>As enchentes já causaram algum tipo de prejuízo na comunidade?</h3>
-              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
+              <span class="fonte-cartao-grafico">Fonte — Autoria Própria (2026)</span>
             </div>
-            <div class="chart-card__canvas-wrap">
+            <div class="area-grafico">
               <canvas data-chart="bar" data-dataset="prejuizoComunidade" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de barras mostrando as fontes de informação usadas atualmente sobre prejuízos causados por enchentes"></canvas>
             </div>
-            <p class="chart-card__interpretation">Por causa de situações como essa, nasce a proposta do Pluvion, de trazer acessibilidade e velocidade, priozando sempre a segurança.</p>
+            <p class="interpretacao-grafico">Por causa de situações como essa, nasce a proposta do Pluvion, de trazer acessibilidade e velocidade, priozando sempre a segurança.</p>
           </article>
 
-          <article class="card chart-card reveal">
-            <div class="chart-card__head">
+          <article class="cartao cartao-grafico aparecer">
+            <div class="cabecalho-cartao-grafico">
               <h3>Residentes por Região</h3>
-              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
+              <span class="fonte-cartao-grafico">Fonte — Autoria Própria (2026)</span>
             </div>
-            <div class="chart-card__canvas-wrap">
+            <div class="area-grafico">
               <canvas data-chart="bar" data-dataset="residentesRegiao" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de barras mostrando o número de residentes por região"></canvas>
             </div>
-            <p class="chart-card__interpretation">Esses dados representam uma pequena parcela do que representa um estado inteiro, e até mesmo uma nação toda que sofre com o problema.</p>
+            <p class="interpretacao-grafico">Esses dados representam uma pequena parcela do que representa um estado inteiro, e até mesmo uma nação toda que sofre com o problema.</p>
           </article>
 
-          <article class="card chart-card reveal">
-            <div class="chart-card__head">
+          <article class="cartao cartao-grafico aparecer">
+            <div class="cabecalho-cartao-grafico">
               <h3>Você acredita que o SEA (Sistema de Alerta de Enchentes) evitaria prejuízos e riscos à população?</h3>
-              <span class="chart-card__source">Fonte — Autoria Própria (2026)</span>
+              <span class="fonte-cartao-grafico">Fonte — Autoria Própria (2026)</span>
             </div>
-            <div class="chart-card__canvas-wrap">
+            <div class="area-grafico">
               <canvas data-chart="doughnut" data-dataset="seaEvitariaPrejuizos" data-label="Respondentes (100%)" role="img" aria-label="Gráfico de rosca mostrando a percepção dos moradores sobre a eficácia do SEA em evitar prejuízos e riscos"></canvas>
             </div>
-            <p class="chart-card__interpretation">É nitida a necessidade que a população tem de encotrar uma solução eficaz para mitigar os riscos associados às enchentes, e o SEA pode ser uma solução promissora.</p>
+            <p class="interpretacao-grafico">É nitida a necessidade que a população tem de encotrar uma solução eficaz para mitigar os riscos associados às enchentes, e o SEA pode ser uma solução promissora.</p>
           </article>
 
 
@@ -379,37 +379,37 @@
 
     <!-- ===================== PROPÓSITO DA PLUVION ===================== -->
     <section class="proposito" id="proposito">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Propósito</p>
-          <h2 class="section-title">Por trás da tecnologia, uma escolha: antecipar para proteger.</h2>
-          <p class="lead">O Pluvion nasceu da constatação de que informação chega tarde demais para quem mais precisa dela. Isso orienta cada decisão do projeto — da forma como medimos o risco até como entregamos o alerta.</p>
+      <div class="conteiner">
+        <div class="cabecalho-secao aparecer">
+          <p class="chamada">Propósito</p>
+          <h2 class="titulo-secao">Por trás da tecnologia, uma escolha: antecipar para proteger.</h2>
+          <p class="descricao">O Pluvion nasceu da constatação de que informação chega tarde demais para quem mais precisa dela. Isso orienta cada decisão do projeto — da forma como medimos o risco até como entregamos o alerta.</p>
         </div>
 
-        <div class="purpose-grid">
-          <article class="purpose-card reveal" tabindex="0" data-purpose-card>
-            <span class="material-symbols-outlined purpose-card__icon" aria-hidden="true">flag</span>
-            <h3 class="purpose-card__title">Por que existimos</h3>
-            <p class="purpose-card__summary"> A sociedade brasileira busca por cuidado e proteção para a prevenção contra enchentes e alagamentos. É para atender às espectativas de um alerta na hora certa de forma precisa que o Pluvion existe.</p>
-            <div class="purpose-card__detail">
+        <div class="grade-proposito">
+          <article class="cartao-proposito aparecer" tabindex="0" data-purpose-card>
+            <span class="material-symbols-outlined icone-proposito" aria-hidden="true">flag</span>
+            <h3 class="titulo-proposito">Por que existimos</h3>
+            <p class="resumo-proposito"> A sociedade brasileira busca por cuidado e proteção para a prevenção contra enchentes e alagamentos. É para atender às espectativas de um alerta na hora certa de forma precisa que o Pluvion existe.</p>
+            <div class="detalhe-proposito">
               <p>A diferença entre um alerta recebido a tempo e um recebido tarde demais pode ser determinante para decidir entre um susto e uma tragédia. Cada sensor instalado não é apenas um monitoramento por parte do comprador, mas uma ferramenta de proteção.</p>
             </div>
           </article>
 
-          <article class="purpose-card reveal" tabindex="0" data-purpose-card>
-            <span class="material-symbols-outlined purpose-card__icon" aria-hidden="true">visibility</span>
-            <h3 class="purpose-card__title">O futuro que buscamos construir</h3>
-            <p class="purpose-card__summary">Buscamos trazer a proteção conectando tecnologia e inovação para a população e para os compradores do SAE. Num paí conictado, a informação sempre chega a tempo.</p>
-            <div class="purpose-card__detail">
+          <article class="cartao-proposito aparecer" tabindex="0" data-purpose-card>
+            <span class="material-symbols-outlined icone-proposito" aria-hidden="true">visibility</span>
+            <h3 class="titulo-proposito">O futuro que buscamos construir</h3>
+            <p class="resumo-proposito">Buscamos trazer a proteção conectando tecnologia e inovação para a população e para os compradores do SAE. Num paí conictado, a informação sempre chega a tempo.</p>
+            <div class="detalhe-proposito">
               <p>Imaginamos cidades onde o monitoramento de risco é tão comum quanto a previsão do tempo, de forma acessível, filtrando de forma específica por local e de maneira confiável o bastante para orientar decisões reais, de moradores a órgãos públicos.</p>
             </div>
           </article>
 
-          <article class="purpose-card reveal" tabindex="0" data-purpose-card>
-            <span class="material-symbols-outlined purpose-card__icon" aria-hidden="true">balance</span>
-            <h3 class="purpose-card__title">O que guia cada decisão</h3>
-            <p class="purpose-card__summary">Um trabalho bem feito com ideias concretas e bem definidas, focando sempre em proporcionar a melhor informação através de dados reais, alertas específicos e tecnologia a serviço de quem mais precisa da notificação na hora certa.</p>
-            <div class="purpose-card__detail">
+          <article class="cartao-proposito aparecer" tabindex="0" data-purpose-card>
+            <span class="material-symbols-outlined icone-proposito" aria-hidden="true">balance</span>
+            <h3 class="titulo-proposito">O que guia cada decisão</h3>
+            <p class="resumo-proposito">Um trabalho bem feito com ideias concretas e bem definidas, focando sempre em proporcionar a melhor informação através de dados reais, alertas específicos e tecnologia a serviço de quem mais precisa da notificação na hora certa.</p>
+            <div class="detalhe-proposito">
               <p>Precisão antes da catástrofe, clareza antes de casas inundadas, e acesso antes de pessoas desabrigadas, deslocadas e perdidias — são esses princípios que moldam cada escolha técnica do Pluvion, do sensor ao aplicativo.</p>
             </div>
           </article>
@@ -419,30 +419,30 @@
 
     <!-- ===================== COMO FUNCIONA ===================== -->
     <section class="como-funciona" id="como-funciona">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Como funciona</p>
-          <h2 class="section-title">Do sensor ao alerta.</h2>
+      <div class="conteiner">
+        <div class="cabecalho-secao aparecer">
+          <p class="chamada">Como funciona</p>
+          <h2 class="titulo-secao">Do sensor ao alerta.</h2>
         </div>
 
-        <div class="steps">
-          <div class="step reveal">
-            <span class="step-index step__index">01</span>
+        <div class="etapas">
+          <div class="etapa aparecer">
+            <span class="indice-etapa numero-etapa">01</span>
             <h3>Sensor instalado</h3>
             <p>O SAE realiza as medições no ponto monitorado, em bueiros e áreas críticas.</p>
           </div>
-          <div class="step reveal">
-            <span class="step-index step__index">02</span>
+          <div class="etapa aparecer">
+            <span class="indice-etapa numero-etapa">02</span>
             <h3>Dados em tempo real</h3>
             <p>O dispositivo transmite as leituras continuamente ao servidor Pluvion.</p>
           </div>
-          <div class="step reveal">
-            <span class="step-index step__index">03</span>
+          <div class="etapa aparecer">
+            <span class="indice-etapa numero-etapa">03</span>
             <h3>Análise de risco</h3>
             <p>O backend processa os dados recebidos e calcula os indicadores de risco por região.</p>
           </div>
-          <div class="step reveal">
-            <span class="step-index step__index">04</span>
+          <div class="etapa aparecer">
+            <span class="indice-etapa numero-etapa">04</span>
             <h3>Alerta personalizado</h3>
             <p>As informações processadas chegam ao aplicativo do cidadão e aos ambientes institucionais.</p>
           </div>
@@ -452,40 +452,40 @@
 
     <!-- ===================== TECNOLOGIA — SAE ===================== -->
     <section class="tecnologia" id="tecnologia">
-      <div class="container tecnologia__inner">
-        <div class="device-visual reveal" data-device-showcase>
-          <img src="images/device/sae.png" alt="Fotografia do dispositivo SAE" class="device-showcase__media is-active" data-showcase-image loading="lazy" />
-          <video class="device-showcase__media" muted playsinline data-showcase-video></video>
+      <div class="conteiner interno-tecnologia">
+        <div class="visual-dispositivo aparecer" data-device-showcase>
+          <img src="images/device/sae.png" alt="Fotografia do dispositivo SAE" class="midia-apresentacao-dispositivo ativo" data-showcase-image loading="lazy" />
+          <video class="midia-apresentacao-dispositivo" muted playsinline data-showcase-video></video>
         </div>
-        <div class="device-panel reveal">
-          <span class="badge device-panel__badge">SAE — Sistema de Alerta de Enchentes</span>
+        <div class="painel-dispositivo aparecer">
+          <span class="etiqueta etiqueta-painel-dispositivo">SAE — Sistema de Alerta de Enchentes</span>
           <h2>O sensor por trás de cada alerta.</h2>
-          <p class="lead">Um dispositivo baseado em ESP32, instalado em bueiros e pontos críticos, que mede o nível da água e transmite os dados continuamente para o servidor Pluvion — onde a inteligência de risco é processada.</p>
+          <p class="descricao">Um dispositivo baseado em ESP32, instalado em bueiros e pontos críticos, que mede o nível da água e transmite os dados continuamente para o servidor Pluvion — onde a inteligência de risco é processada.</p>
 
-          <div class="spec-grid">
-            <div class="card spec-item">
-              <span class="spec-item__label">Leitura de nível</span>
-              <span class="spec-item__value">Sensor ultrassônico</span>
+          <div class="grade-especificacoes">
+            <div class="cartao item-especificacao">
+              <span class="rotulo-item-especificacao">Leitura de nível</span>
+              <span class="valor-item-especificacao">Sensor ultrassônico</span>
             </div>
-            <div class="card spec-item">
-              <span class="spec-item__label">Conectividade</span>
-              <span class="spec-item__value">Wi-Fi / HTTPS</span>
+            <div class="cartao item-especificacao">
+              <span class="rotulo-item-especificacao">Conectividade</span>
+              <span class="valor-item-especificacao">Wi-Fi / HTTPS</span>
             </div>
-            <div class="card spec-item">
-              <span class="spec-item__label">Alimentação</span>
-              <span class="spec-item__value">Solar + bateria</span>
+            <div class="cartao item-especificacao">
+              <span class="rotulo-item-especificacao">Alimentação</span>
+              <span class="valor-item-especificacao">Solar + bateria</span>
             </div>
-            <div class="card spec-item">
-              <span class="spec-item__label">Atualização</span>
-              <span class="spec-item__value">OTA (remota)</span>
+            <div class="cartao item-especificacao">
+              <span class="rotulo-item-especificacao">Atualização</span>
+              <span class="valor-item-especificacao">OTA (remota)</span>
             </div>
-            <div class="card spec-item">
-              <span class="spec-item__label">Armazenamento</span>
-              <span class="spec-item__value">Local temporário</span>
+            <div class="cartao item-especificacao">
+              <span class="rotulo-item-especificacao">Armazenamento</span>
+              <span class="valor-item-especificacao">Local temporário</span>
             </div>
-            <div class="card spec-item">
-              <span class="spec-item__label">Envio de dados</span>
-              <span class="spec-item__value">Tempo real</span>
+            <div class="cartao item-especificacao">
+              <span class="rotulo-item-especificacao">Envio de dados</span>
+              <span class="valor-item-especificacao">Tempo real</span>
             </div>
           </div>
         </div>
@@ -494,32 +494,32 @@
 
     <!-- ===================== ESCALA DE RISCO ===================== -->
     <section class="risco" id="risco">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Escala de risco</p>
-          <h2 class="section-title">Quatro níveis, uma leitura clara para todo mundo.</h2>
+      <div class="conteiner">
+        <div class="cabecalho-secao aparecer">
+          <p class="chamada">Escala de risco</p>
+          <h2 class="titulo-secao">Quatro níveis, uma leitura clara para todo mundo.</h2>
         </div>
 
-        <div class="risk-levels">
-          <div class="risk-card risk-card--1 reveal">
-            <span class="risk-card__level">Nível 1</span>
-            <h3 class="risk-card__title">Sem risco</h3>
-            <p class="risk-card__desc">Situação normal, monitoramento contínuo.</p>
+        <div class="niveis-risco">
+          <div class="cartao-risco cartao-risco-1 aparecer">
+            <span class="nivel-cartao-risco">Nível 1</span>
+            <h3 class="titulo-cartao-risco">Sem risco</h3>
+            <p class="descricao-cartao-risco">Situação normal, monitoramento contínuo.</p>
           </div>
-          <div class="risk-card risk-card--2 reveal">
-            <span class="risk-card__level">Nível 2</span>
-            <h3 class="risk-card__title">Atenção</h3>
-            <p class="risk-card__desc">Nível em alteração — acompanhe as atualizações.</p>
+          <div class="cartao-risco cartao-risco-2 aparecer">
+            <span class="nivel-cartao-risco">Nível 2</span>
+            <h3 class="titulo-cartao-risco">Atenção</h3>
+            <p class="descricao-cartao-risco">Nível em alteração — acompanhe as atualizações.</p>
           </div>
-          <div class="risk-card risk-card--3 reveal">
-            <span class="risk-card__level">Nível 3</span>
-            <h3 class="risk-card__title">Alerta</h3>
-            <p class="risk-card__desc">Situação relevante — siga as orientações da região.</p>
+          <div class="cartao-risco cartao-risco-3 aparecer">
+            <span class="nivel-cartao-risco">Nível 3</span>
+            <h3 class="titulo-cartao-risco">Alerta</h3>
+            <p class="descricao-cartao-risco">Situação relevante — siga as orientações da região.</p>
           </div>
-          <div class="risk-card risk-card--4 reveal">
-            <span class="risk-card__level">Nível 4</span>
-            <h3 class="risk-card__title">Emergência</h3>
-            <p class="risk-card__desc">Risco elevado e imediato — acione ajuda.</p>
+          <div class="cartao-risco cartao-risco-4 aparecer">
+            <span class="nivel-cartao-risco">Nível 4</span>
+            <h3 class="titulo-cartao-risco">Emergência</h3>
+            <p class="descricao-cartao-risco">Risco elevado e imediato — acione ajuda.</p>
           </div>
         </div>
       </div>
@@ -527,12 +527,12 @@
 
     <!-- ===================== PARA INSTITUIÇÕES ===================== -->
     <section class="instituicoes" id="instituicoes">
-      <div class="container">
-        <div class="instituicoes__intro reveal">
-          <p class="eyebrow eyebrow--on-dark">Para instituições</p>
-          <h2 class="section-title">Dados de monitoramento para quem decide pela cidade.</h2>
+      <div class="conteiner">
+        <div class="introducao-instituicoes aparecer">
+          <p class="chamada chamada-fundo-escuro">Para instituições</p>
+          <h2 class="titulo-secao">Dados de monitoramento para quem decide pela cidade.</h2>
           <p>Empresas, condomínios, seguradoras e órgãos públicos podem utilizar as informações do Pluvion para monitoramento, análise histórica, relatórios e tomada de decisão.</p>
-          <ul class="instituicoes__list">
+          <ul class="lista-instituicoes">
             <li>Acompanhamento de dispositivos e leituras por região</li>
             <li>Análise histórica e visualização de dados</li>
             <li>Relatórios para apoiar a tomada de decisão</li>
@@ -540,40 +540,40 @@
           </ul>
         </div>
 
-        <div class="institutional-panel reveal">
-          <h3 class="institutional-panel__title">Solicitar acesso institucional</h3>
+        <div class="painel-institucional aparecer">
+          <h3 class="titulo-painel-institucional">Solicitar acesso institucional</h3>
 
-          <form class="institutional-form" novalidate>
-            <div class="institutional-form__grid">
-              <div class="field">
-                <label for="responsibleName">Nome do responsável</label>
-                <input type="text" id="responsibleName" name="responsibleName" autocomplete="name" />
-                <span class="field-error"></span>
+          <form class="formulario-institucional" novalidate>
+            <div class="grade-formulario-institucional">
+              <div class="campo">
+                <label for="nome-responsavel">Nome do responsável</label>
+                <input type="text" id="nome-responsavel" name="responsibleName" autocomplete="name" />
+                <span class="erro-campo"></span>
               </div>
-              <div class="field">
+              <div class="campo">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" autocomplete="email" />
-                <span class="field-error"></span>
+                <span class="erro-campo"></span>
               </div>
             </div>
 
-            <div class="institutional-form__grid">
-              <div class="field">
-                <label for="phone">Telefone</label>
-                <input type="tel" id="phone" name="phone" autocomplete="tel" />
-                <span class="field-error"></span>
+            <div class="grade-formulario-institucional">
+              <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="phone" autocomplete="tel" />
+                <span class="erro-campo"></span>
               </div>
-              <div class="field">
-                <label for="institutionName">Nome da instituição</label>
-                <input type="text" id="institutionName" name="institutionName" />
-                <span class="field-error"></span>
+              <div class="campo">
+                <label for="nome-instituicao">Nome da instituição</label>
+                <input type="text" id="nome-instituicao" name="institutionName" />
+                <span class="erro-campo"></span>
               </div>
             </div>
 
-            <div class="institutional-form__grid">
-              <div class="field">
-                <label for="institutionType">Tipo de instituição</label>
-                <select id="institutionType" name="institutionType">
+            <div class="grade-formulario-institucional">
+              <div class="campo">
+                <label for="tipo-instituicao">Tipo de instituição</label>
+                <select id="tipo-instituicao" name="institutionType">
                   <option value="">Selecione</option>
                   <option value="empresa">Empresa</option>
                   <option value="condominio">Condomínio</option>
@@ -581,51 +581,51 @@
                   <option value="orgao-publico">Órgão público</option>
                   <option value="outra">Outra</option>
                 </select>
-                <span class="field-error"></span>
+                <span class="erro-campo"></span>
               </div>
-              <div class="field">
-                <label for="deviceInterestCount">Quantidade aproximada de interesse</label>
-                <input type="number" min="1" id="deviceInterestCount" name="deviceInterestCount" />
-              </div>
-            </div>
-
-            <div class="institutional-form__grid">
-              <div class="field">
-                <label for="city">Cidade</label>
-                <input type="text" id="city" name="city" autocomplete="address-level2" />
-                <span class="field-error"></span>
-              </div>
-              <div class="field">
-                <label for="state">Estado</label>
-                <input type="text" id="state" name="state" autocomplete="address-level1" />
-                <span class="field-error"></span>
+              <div class="campo">
+                <label for="quantidade-interesse-dispositivo">Quantidade aproximada de interesse</label>
+                <input type="number" min="1" id="quantidade-interesse-dispositivo" name="deviceInterestCount" />
               </div>
             </div>
 
-            <div class="field">
-              <label for="message">Mensagem / observação</label>
-              <textarea id="message" name="message"></textarea>
+            <div class="grade-formulario-institucional">
+              <div class="campo">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="city" autocomplete="address-level2" />
+                <span class="erro-campo"></span>
+              </div>
+              <div class="campo">
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" name="state" autocomplete="address-level1" />
+                <span class="erro-campo"></span>
+              </div>
             </div>
 
-            <div class="checkbox-field">
-              <input type="checkbox" id="consent" name="consent" />
-              <label for="consent">
+            <div class="campo">
+              <label for="mensagem">Mensagem / observação</label>
+              <textarea id="mensagem" name="message"></textarea>
+            </div>
+
+            <div class="campo-selecao">
+              <input type="checkbox" id="consentimento" name="consent" />
+              <label for="consentimento">
                 Concordo com o uso dos dados informados para fins de análise e contato institucional. 
               <a href="docs/termos-de-uso.pdf" target="_blank" rel="noopener" class="termos-inst">
                 Termos de Uso
               </a>
               </label>
             </div>
-            <span class="field-error" id="consent-error"></span>
+            <span class="erro-campo" id="erro-consentimento"></span>
 
-            <div class="institutional-form__actions">
-              <button type="submit" class="btn btn-primary">
-                <span class="spinner" aria-hidden="true"></span>
-                <span class="btn-label">Solicitar acesso institucional</span>
+            <div class="acoes-formulario-institucional">
+              <button type="submit" class="botao botao-principal">
+                <span class="carregando" aria-hidden="true"></span>
+                <span class="rotulo-botao">Solicitar acesso institucional</span>
               </button>
             </div>
 
-            <div class="form-status" role="status" aria-live="polite"></div>
+            <div class="status-formulario" role="status" aria-live="polite"></div>
           </form>
         </div>
       </div>
@@ -633,72 +633,72 @@
 
     <!-- ===================== CRIADORES ===================== -->
     <section class="criadores" id="criadores">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Criadores</p>
-          <h2 class="section-title">Quem desenvolveu o Pluvion.</h2>
+      <div class="conteiner">
+        <div class="cabecalho-secao aparecer">
+          <p class="chamada">Criadores</p>
+          <h2 class="titulo-secao">Quem desenvolveu o Pluvion.</h2>
         </div>
 
-        <div class="creators-grid">
-          <article class="creator-card reveal">
-            <div class="creator-card__photo">
+        <div class="grade-criadores">
+          <article class="cartao-criador aparecer">
+            <div class="foto-criador">
               <img src="images/creators/Foto-Katarina.jpg" alt="Katarina Freire Silva" loading="lazy" />
             </div>
-            <h3 class="creator-card__name">Katarina Freire Silva</h3>
-            <span class="creator-card__role">Programadora</span>
-            <p class="creator-card__bio">Sou criativa e gosto de desenvolver soluções inovadoras.</p>
-            <div class="creator-card__social">
+            <h3 class="nome-criador">Katarina Freire Silva</h3>
+            <span class="funcao-criador">Programadora</span>
+            <p class="biografia-criador">Sou criativa e gosto de desenvolver soluções inovadoras.</p>
+            <div class="rede-social-criador">
               <a href="https://github.com/Katarina-Freire-Silva?tab=overview&from=2026-04-01&to=2026-04-30" aria-label="GitHub"><img src="images/general/Github.png" alt="" width="15" height="15"/></a>
               <a href="https://www.linkedin.com/in/katarina-freire-silva-805b42406/" aria-label="LinkedIn"><img src="images/general/Linkedin.png" alt="" width="15" height="15"/></a>
             </div>
           </article>
 
-          <article class="creator-card reveal">
-            <div class="creator-card__photo">
+          <article class="cartao-criador aparecer">
+            <div class="foto-criador">
               <img src="images/creators/Foto-Felipe.jpeg" alt="Luis Felipe Novais Conrado" loading="lazy" />
             </div>
-            <h3 class="creator-card__name">Luis Felipe Novais Conrado</h3>
-            <span class="creator-card__role">Designer</span>
-            <p class="creator-card__bio">Sou criativo e gosto de criar experiências que conectem pessoas e tecnologia.</p>
-            <div class="creator-card__social">
+            <h3 class="nome-criador">Luis Felipe Novais Conrado</h3>
+            <span class="funcao-criador">Designer</span>
+            <p class="biografia-criador">Sou criativo e gosto de criar experiências que conectem pessoas e tecnologia.</p>
+            <div class="rede-social-criador">
               <a href="https://github.com/fruyigeraearoo" aria-label="GitHub"><img src="images/general/Github.png" alt="" width="15" height="15"/></a>
               <a href="https://www.linkedin.com/in/felipnovaiss/" aria-label="LinkedIn"><img src="images/general/Linkedin.png" alt="" width="15" height="15"/></a>
             </div>
           </article>
 
-          <article class="creator-card reveal">
-            <div class="creator-card__photo">
+          <article class="cartao-criador aparecer">
+            <div class="foto-criador">
               <img src="images/creators/Foto-Manuela.png" alt="Manuela Teixeira de Oliveira" loading="lazy" />
             </div>
-            <h3 class="creator-card__name"> Manuela Teixeira de Oliveira</h3>
-            <span class="creator-card__role">Monografia</span>
-            <p class="creator-card__bio">Trabalhar com foco e determinação é o que garante um excelente projeto.</p>
-            <div class="creator-card__social">
+            <h3 class="nome-criador"> Manuela Teixeira de Oliveira</h3>
+            <span class="funcao-criador">Monografia</span>
+            <p class="biografia-criador">Trabalhar com foco e determinação é o que garante um excelente projeto.</p>
+            <div class="rede-social-criador">
               <a href="https://github.com/Manutxx" aria-label="GitHub"><img src="images/general/Github.png" alt="" width="15" height="15"/></a>
               <a href="https://www.linkedin.com/in/manuela-teixeira-022b82407/" aria-label="LinkedIn"><img src="images/general/Linkedin.png" alt="" width="15" height="15"/></a>
             </div>
           </article>
 
-          <article class="creator-card reveal">
-            <div class="creator-card__photo">
+          <article class="cartao-criador aparecer">
+            <div class="foto-criador">
               <img src="images/creators/Foto-Rodrigo.jpg" alt="Rodrigo Ramos Ribeiro" loading="lazy" />
             </div>
-            <h3 class="creator-card__name">Rodrigo Ramos Ribeiro</h3>
-            <span class="creator-card__role">Sistemas Embarcados</span>
-            <p class="creator-card__bio">Foco no desenvolvimento de sistemas embarcados para aplicações de monitoramento e controle.</p>
-            <div class="creator-card__social">
+            <h3 class="nome-criador">Rodrigo Ramos Ribeiro</h3>
+            <span class="funcao-criador">Sistemas Embarcados</span>
+            <p class="biografia-criador">Foco no desenvolvimento de sistemas embarcados para aplicações de monitoramento e controle.</p>
+            <div class="rede-social-criador">
               <a href="https://github.com/rodrigoramosriber-code" aria-label="GitHub"><img src="images/general/Github.png" alt="" width="15" height="15"/></a>
             </div>
           </article>
 
-          <article class="creator-card reveal">
-            <div class="creator-card__photo">
+          <article class="cartao-criador aparecer">
+            <div class="foto-criador">
               <img src="images/creators/Foto-Sarah.jpg" alt="Sarah da Conceição Lamas Bento" loading="lazy" />
             </div>
-            <h3 class="creator-card__name">Sarah da Conceição Lamas Bento</h3>
-            <span class="creator-card__role">Monografia</span>
-            <p class="creator-card__bio">A escrita e a Segurança da Informação são áreas que me interessam profundamente.</p>
-            <div class="creator-card__social">
+            <h3 class="nome-criador">Sarah da Conceição Lamas Bento</h3>
+            <span class="funcao-criador">Monografia</span>
+            <p class="biografia-criador">A escrita e a Segurança da Informação são áreas que me interessam profundamente.</p>
+            <div class="rede-social-criador">
               <a href="https://github.com/sarahlamas" aria-label="GitHub"><img src="images/general/Github.png" alt="" width="15" height="15"/></a>
               <a href="https://www.linkedin.com/in/sarah-bento-217815379?utm_source=share_via&utm_content=profile&utm_medium=member_ios" aria-label="LinkedIn"><img src="images/general/Linkedin.png" alt="" width="15" height="15"/></a>
             </div>
@@ -709,14 +709,14 @@
 
     <!-- ===================== PRODUÇÕES ===================== -->
     <section class="producoes" id="producoes">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Produções</p>
-          <h2 class="section-title">Conheça um pouco mais sobre a Pluvion.</h2>
+      <div class="conteiner">
+        <div class="cabecalho-secao aparecer">
+          <p class="chamada">Produções</p>
+          <h2 class="titulo-secao">Conheça um pouco mais sobre a Pluvion.</h2>
         </div>
 
-        <div class="producoes__grid">
-          <div class="video-pitch reveal">
+        <div class="grade-producoes">
+          <div class="video-apresentacao aparecer">
             <video
               src="video/pitch.mp4"
               controls
@@ -728,10 +728,10 @@
             ></video>
           </div>
 
-          <div class="card monograph-card reveal">
+          <div class="cartao cartao-monografia aparecer">
             <h3>Conheça o projeto em profundidade.</h3>
             <p>A monografia completa reúne a pesquisa, a fundamentação teórica e o desenvolvimento técnico por trás do Pluvion.</p>
-            <a href="https://drive.google.com/uc?export=download&id=1PMpwtRQvRNUx0hpPj3uCVZ_VY9FQH76w" class="btn btn-secondary" id="monograph-download">
+            <a href="https://drive.google.com/uc?export=download&id=1PMpwtRQvRNUx0hpPj3uCVZ_VY9FQH76w" class="botao botao-secundario" id="download-monografia">
               <span class="material-symbols-outlined" aria-hidden="true">download</span>
               Baixar monografia
             </a>
@@ -743,54 +743,54 @@
 
   <!-- ===================== AVALIAÇÃO ===================== -->
   <section class="avaliacao" id="avaliacao" aria-label="Avaliação da experiência">
-    <div class="container">
-      <div class="avaliacao__panel reveal">
-        <h3 class="avaliacao__title">Como foi sua experiência com o Pluvion?</h3>
-        <div class="star-rating" data-star-rating role="radiogroup" aria-label="Avalie sua experiência de 1 a 5 estrelas">
-          <button type="button" class="star-rating__star" data-star-value="1" aria-label="1 estrela" role="radio" aria-checked="false">
+    <div class="conteiner">
+      <div class="painel-avaliacao aparecer">
+        <h3 class="titulo-avaliacao">Como foi sua experiência com o Pluvion?</h3>
+        <div class="avaliacao-estrelas" data-star-rating role="radiogroup" aria-label="Avalie sua experiência de 1 a 5 estrelas">
+          <button type="button" class="estrela-avaliacao" data-star-value="1" aria-label="1 estrela" role="radio" aria-checked="false">
             <span class="material-symbols-outlined" aria-hidden="true">star</span>
           </button>
-          <button type="button" class="star-rating__star" data-star-value="2" aria-label="2 estrelas" role="radio" aria-checked="false">
+          <button type="button" class="estrela-avaliacao" data-star-value="2" aria-label="2 estrelas" role="radio" aria-checked="false">
             <span class="material-symbols-outlined" aria-hidden="true">star</span>
           </button>
-          <button type="button" class="star-rating__star" data-star-value="3" aria-label="3 estrelas" role="radio" aria-checked="false">
+          <button type="button" class="estrela-avaliacao" data-star-value="3" aria-label="3 estrelas" role="radio" aria-checked="false">
             <span class="material-symbols-outlined" aria-hidden="true">star</span>
           </button>
-          <button type="button" class="star-rating__star" data-star-value="4" aria-label="4 estrelas" role="radio" aria-checked="false">
+          <button type="button" class="estrela-avaliacao" data-star-value="4" aria-label="4 estrelas" role="radio" aria-checked="false">
             <span class="material-symbols-outlined" aria-hidden="true">star</span>
           </button>
-          <button type="button" class="star-rating__star" data-star-value="5" aria-label="5 estrelas" role="radio" aria-checked="false">
+          <button type="button" class="estrela-avaliacao" data-star-value="5" aria-label="5 estrelas" role="radio" aria-checked="false">
             <span class="material-symbols-outlined" aria-hidden="true">star</span>
           </button>
         </div>
-        <button type="button" class="btn btn-primary" data-rating-submit>Finalizar</button>
+        <button type="button" class="botao botao-principal" data-rating-submit>Finalizar</button>
       </div>
     </div>
   </section>
 
-  <div class="rating-toast" data-rating-toast aria-live="polite">
+  <div class="aviso-avaliacao" data-rating-toast aria-live="polite">
     <span class="material-symbols-outlined" aria-hidden="true">favorite</span>
     <span>Muito obrigada pela sua resposta!</span>
   </div>
 
   <!-- ===================== FOOTER ===================== -->
-  <footer class="site-footer" id="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__brand">
-          <a href="#" class="footer__brand-mark">
+  <footer class="rodape-site" id="rodape">
+    <div class="conteiner">
+      <div class="topo-rodape">
+        <div class="marca-rodape">
+          <a href="#" class="simbolo-marca-rodape">
             <img src="images/general/logo.svg" alt="" width="22" height="22" />
-            <img class="footer__brand-wordmark" src="images/general/Pluvion-branco.svg" alt="" width="100" height="100"/>
+            <img class="nome-marca-rodape" src="images/general/Pluvion-branco.svg" alt="" width="100" height="100"/>
           </a>
           <p>Monitoramento e alerta de enchentes e alagamentos, do sensor ao alerta — para pessoas e instituições decidirem com dados.</p>
-          <div class="footer__social">
+          <div class="redes-rodape">
             <a href="https://www.instagram.com/projetopluvion/" aria-label="Pluvion no Instagram"><img src="images/general/Instagram.png" alt="" width="30" height="30" /></a>
-            <a href="https://github.com/Sistema-Pluvion" aria-label="Pluvion no GitHub"><img src="images/general/Github.png" alt="" width="30" height="30" /></a>
+            <a href="https://github.com/Katarina-Freire-Silva/Pluvion-Landing-Page" aria-label="Pluvion no GitHub"><img src="images/general/Github.png" alt="" width="30" height="30" /></a>
             <a href="https://www.youtube.com/@ProjetoPluvion" aria-label="Pluvion no YouTube"><img src="images/general/Youtube.png" alt="" width="30" height="30"/></a>
           </div>
         </div>
 
-        <div class="footer__col">
+        <div class="coluna-rodape">
           <h4>Navegação</h4>
           <ul>
             <li><a href="#participar">Participar</a></li>
@@ -802,7 +802,7 @@
           </ul>
         </div>
 
-        <div class="footer__col">
+        <div class="coluna-rodape">
           <h4>Sistema</h4>
           <ul>
             <li><a href="#risco">Risco</a></li>            
@@ -818,14 +818,14 @@
           </ul>
         </div>
 
-        <div class="footer__col footer__col--center">
+        <div class="coluna-rodape coluna-rodape-central">
           <h4>Acessar pelo celular</h4>
           <img src="images/general/qrcode.png" height="150" width="150" alt="QR Code para acessar o Pluvion pelo celular" />
         </div>
       </div>
 
 
-      <div class="footer__bottom">
+      <div class="base-rodape">
         <span>© 2026 Pluvion. Todos os direitos reservados.</span>
         <span>SAE — Sistema de Alerta de Enchentes</span>
       </div>

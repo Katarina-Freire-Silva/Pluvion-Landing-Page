@@ -7,7 +7,7 @@
 window.Pluvion = window.Pluvion || {};
 
 function initProductionLinks() {
-  const monographLink = document.getElementById('monograph-download');
+  const monographLink = document.getElementById('download-monografia');
   if (monographLink) {
     if (Pluvion.CONFIG.monographUrl) {
       monographLink.href = Pluvion.CONFIG.monographUrl;
@@ -20,7 +20,7 @@ function initProductionLinks() {
     }
   }
 
-  const videoPitchLink = document.querySelector('.video-pitch');
+  const videoPitchLink = document.querySelector('.video-apresentacao');
   if (videoPitchLink) {
     if (Pluvion.CONFIG.pitchVideoUrl) {
       videoPitchLink.href = Pluvion.CONFIG.pitchVideoUrl;

@@ -24,8 +24,8 @@ Pluvion.initDeviceShowcase = function () {
 
   function showImage() {
     videoEl.pause();
-    videoEl.classList.remove('is-active');
-    imageEl.classList.add('is-active');
+    videoEl.classList.remove('ativo');
+    imageEl.classList.add('ativo');
     window.clearTimeout(imageTimer);
     imageTimer = window.setTimeout(playNextVideo, IMAGE_DURATION);
   }
@@ -34,8 +34,8 @@ Pluvion.initDeviceShowcase = function () {
     if (!videos.length) return;
     videoEl.src = videos[index];
     videoEl.load();
-    imageEl.classList.remove('is-active');
-    videoEl.classList.add('is-active');
+    imageEl.classList.remove('ativo');
+    videoEl.classList.add('ativo');
     videoEl.play().catch(() => {
       showImage();
     });

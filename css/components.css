@@ -2,18 +2,18 @@
    COMPONENTES REUTILIZÁVEIS
    ========================================================================== */
 
-.container {
+.conteiner {
   width: 100%;
   max-width: var(--container-width);
   margin-inline: auto;
   padding-inline: var(--container-padding);
 }
 
-.section {
+.secao {
   padding-block: var(--space-2xl);
 }
 
-.section-head {
+.cabecalho-secao {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
@@ -21,7 +21,7 @@
 }
 
 /* ---- Botões ---- */
-.btn {
+.botao {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -36,69 +36,69 @@
   border: 1.5px solid transparent;
 }
 
-.btn:hover {
+.botao:hover {
   transform: translateY(-1px);
 }
 
-.btn:active {
+.botao:active {
   transform: translateY(0);
 }
 
-.btn-primary {
+.botao-principal {
   background: var(--color-primary);
   color: #fff;
   box-shadow: 0 8px 20px rgba(82, 125, 147, 0.28);
 }
 
-.btn-primary:hover {
+.botao-principal:hover {
   background: var(--color-primary-dark);
   box-shadow: 0 10px 26px rgba(82, 125, 147, 0.36);
 }
 
-.btn-secondary {
+.botao-secundario {
   background: transparent;
   border-color: var(--color-border-strong);
   color: var(--color-text);
 }
 
-.btn-secondary:hover {
+.botao-secundario:hover {
   border-color: var(--color-primary);
   color: var(--color-primary);
 }
 
-.btn-on-dark {
+.botao-fundo-escuro {
   border-color: rgba(255, 255, 255, 0.3);
   color: var(--color-on-dark);
 }
 
-.btn-on-dark:hover {
+.botao-fundo-escuro:hover {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-.btn-block {
+.botao-bloco {
   width: 100%;
 }
 
-.btn[disabled] {
+.botao[disabled] {
   opacity: 0.6;
   transform: none;
   cursor: not-allowed;
 }
 
-.btn .spinner {
+.botao .carregando {
   display: none;
 }
 
-.btn.is-loading .spinner {
+.botao.carregando .carregando {
   display: inline-flex;
 }
 
-.btn.is-loading .btn-label {
+.botao.carregando .rotulo-botao {
   opacity: 0.8;
 }
 
 /* ---- Spinner ---- */
-.spinner {
+.carregando {
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -112,25 +112,25 @@
 }
 
 /* ---- Cards ---- */
-.card {
+.cartao {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: var(--space-md);
 }
 
-.card-hover {
+.cartao-interativo {
   transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
-.card-hover:hover {
+.cartao-interativo:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
   border-color: var(--color-border-strong);
 }
 
 /* ---- Badges ---- */
-.badge {
+.etiqueta {
   display: inline-flex;
   align-items: center;
   gap: 0.4em;
@@ -143,7 +143,7 @@
   font-weight: 600;
 }
 
-.badge-dot {
+.ponto-etiqueta {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -151,7 +151,7 @@
 }
 
 /* ---- Números de passo / índice ---- */
-.step-index {
+.indice-etapa {
   font-family: "Josefin Sans", sans-serif;
   font-size: var(--fs-sm);
   color: var(--color-primary);
@@ -160,26 +160,26 @@
 }
 
 /* ---- Formulário ---- */
-.field {
+.campo {
   display: flex;
   flex-direction: column;
   gap: var(--space-3xs);
 }
 
-.field label {
+.campo label {
   font-size: var(--fs-sm);
   font-weight: 600;
   color: var(--color-text-soft);
 }
 
-.field-hint {
+.dica-campo {
   font-size: 0.75rem;
   color: var(--color-muted);
 }
 
-.field input,
-.field select,
-.field textarea {
+.campo input,
+.campo select,
+.campo textarea {
   border: 1.5px solid var(--color-border-strong);
   border-radius: var(--radius-sm);
   padding: 0.75rem 0.9rem;
@@ -188,48 +188,48 @@
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-.field input:focus,
-.field select:focus,
-.field textarea:focus {
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
   border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(82, 125, 147, 0.18);
   outline: none;
 }
 
-.field textarea {
+.campo textarea {
   resize: vertical;
   min-height: 96px;
 }
 
-.field.has-error input,
-.field.has-error select,
-.field.has-error textarea {
+.campo.com-erro input,
+.campo.com-erro select,
+.campo.com-erro textarea {
   border-color: var(--color-danger);
 }
 
-.field-error {
+.erro-campo {
   display: none;
   font-size: 0.78rem;
   color: var(--color-danger);
 }
 
-.field.has-error .field-error {
+.campo.com-erro .erro-campo {
   display: block;
 }
 
-.field-row {
+.linha-campo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-sm);
 }
 
-.checkbox-field {
+.campo-selecao {
   display: flex;
   align-items: flex-start;
   gap: var(--space-2xs);
 }
 
-.checkbox-field input {
+.campo-selecao input {
   margin-top: 0.2rem;
   width: 16px;
   height: 16px;
@@ -237,14 +237,14 @@
   flex-shrink: 0;
 }
 
-.checkbox-field label {
+.campo-selecao label {
   font-weight: 400;
   font-size: var(--fs-sm);
   color: var(--color-text-soft);
 }
 
 /* ---- Estados de formulário ---- */
-.form-status {
+.status-formulario {
   display: none;
   align-items: flex-start;
   gap: var(--space-2xs);
@@ -254,41 +254,41 @@
   margin-top: var(--space-sm);
 }
 
-.form-status.is-visible {
+.status-formulario.visivel {
   display: flex;
 }
 
-.form-status--success {
+.status-formulario-sucesso {
   background: var(--risk-1-bg);
   color: #17593d;
 }
 
-.form-status--error {
+.status-formulario-erro {
   background: var(--risk-4-bg);
   color: #7d1526;
 }
 
 /* ---- Divisor de seção ---- */
-.divider {
+.divisor {
   height: 1px;
   background: var(--color-border);
   border: none;
 }
 
 /* ---- Visually revealed on scroll ---- */
-.reveal {
+.aparecer {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
-.reveal.is-visible {
+.aparecer.visivel {
   opacity: 1;
   transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal {
+  .aparecer {
     opacity: 1;
     transform: none;
     transition: none;
@@ -296,7 +296,7 @@
 }
 
 /* ---- Placeholder visual ---- */
-.placeholder-box {
+.caixa-reserva {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -310,7 +310,7 @@
   padding: var(--space-lg);
 }
 
-.placeholder-box span {
+.caixa-reserva span {
   font-family: "Josefin Sans", sans-serif;
   font-size: 0.7rem;
   letter-spacing: var(--tracking-wide);

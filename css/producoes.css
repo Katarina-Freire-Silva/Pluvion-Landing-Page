@@ -7,18 +7,18 @@
   background: var(--color-surface-alt);
 }
 
-.producoes .section-head {
+.producoes .cabecalho-secao {
   max-width: 40rem;
 }
 
-.producoes__grid {
+.grade-producoes {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: var(--space-lg);
 }
 
 /* ---- Vídeo pitch ---- */
-.video-pitch {
+.video-apresentacao {
   position: relative;
   aspect-ratio: 16 / 9;
   border-radius: var(--radius-lg);
@@ -29,8 +29,8 @@
   justify-content: center;
 }
 
-.video-pitch img,
-.video-pitch video {
+.video-apresentacao img,
+.video-apresentacao video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -39,7 +39,7 @@
   opacity: 0.8;
 }
 
-.video-pitch {
+.video-apresentacao {
   position: relative;
   aspect-ratio: 16 / 9;
   border-radius: var(--radius-lg);
@@ -47,7 +47,7 @@
   overflow: hidden;
 }
 
-.video-pitch video {
+.video-apresentacao video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -55,7 +55,7 @@
 }
 
 
-.video-pitch__label {
+.rotulo-video-apresentacao {
   position: absolute;
   bottom: var(--space-md);
   right: var(--space-md);
@@ -68,7 +68,7 @@
 }
 
 /* ---- Monografia ---- */
-.monograph-card {
+.cartao-monografia {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,12 +76,12 @@
   background: var(--color-surface);
 }
 
-.monograph-card h3 {
+.cartao-monografia h3 {
   font-size: var(--fs-lg);
 }
 
 @media (max-width: 900px) {
-  .producoes__grid {
+  .grade-producoes {
     grid-template-columns: 1fr;
   }
 }

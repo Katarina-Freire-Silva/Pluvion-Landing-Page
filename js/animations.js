@@ -8,10 +8,10 @@ window.Pluvion = window.Pluvion || {};
 
 Pluvion.initAnimations = function () {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const revealEls = document.querySelectorAll('.reveal');
+  const revealEls = document.querySelectorAll('.aparecer');
 
   if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-    revealEls.forEach((el) => el.classList.add('is-visible'));
+    revealEls.forEach((el) => el.classList.add('visivel'));
     return;
   }
 
@@ -19,7 +19,7 @@ Pluvion.initAnimations = function () {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
+          entry.target.classList.add('visivel');
           observer.unobserve(entry.target);
         }
       });

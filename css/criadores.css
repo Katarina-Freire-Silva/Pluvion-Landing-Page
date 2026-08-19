@@ -6,42 +6,42 @@
   padding-block: var(--space-2xl);
 }
 
-.criadores .section-head {
+.criadores .cabecalho-secao {
   max-width: 40rem;
 }
 
-.creators-grid {
+.grade-criadores {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: var(--space-md);
 }
 
-.creator-card {
+.cartao-criador {
   display: flex;
   flex-direction: column;
   gap: var(--space-2xs);
 }
 
-.creator-card__photo {
+.foto-criador {
   aspect-ratio: 1 / 1;
   border-radius: var(--radius-md);
   overflow: hidden;
   background: var(--color-surface-alt);
 }
 
-.creator-card__photo img {
+.foto-criador img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.creator-card__name {
+.nome-criador {
   font-size: var(--fs-md);
   font-weight: 600;
   margin-top: var(--space-2xs);
 }
 
-.creator-card__role {
+.funcao-criador {
   font-family: "Josefin Sans", sans-serif;
   font-size: 0.72rem;
   letter-spacing: var(--tracking-wide);
@@ -49,17 +49,17 @@
   color: var(--color-primary);
 }
 
-.creator-card__bio {
+.biografia-criador {
   font-size: var(--fs-sm);
 }
 
-.creator-card__social {
+.rede-social-criador {
   display: flex;
   gap: var(--space-2xs);
   margin-top: var(--space-3xs);
 }
 
-.creator-card__social a {
+.rede-social-criador a {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -71,19 +71,19 @@
   transition: border-color var(--transition-fast), color var(--transition-fast);
 }
 
-.creator-card__social a:hover {
+.rede-social-criador a:hover {
   border-color: var(--color-primary);
   color: var(--color-primary);
 }
 
 @media (max-width: 1080px) {
-  .creators-grid {
+  .grade-criadores {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 640px) {
-  .creators-grid {
+  .grade-criadores {
     grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -2,26 +2,26 @@
    FOOTER
    ========================================================================== */
 
-.site-footer {
+.rodape-site {
   background: var(--color-navy-deep);
   color: var(--color-muted-on-dark);
   padding-block: var(--space-2xl) var(--space-lg);
 }
 
-.footer__top {
+.topo-rodape {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1fr;
   gap: var(--space-lg);
   padding-bottom: var(--space-xl);
 }
 
-.footer__brand {
+.marca-rodape {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
 }
 
-.footer__brand-mark {
+.simbolo-marca-rodape {
   display: flex;
   align-items: center;
   gap: var(--space-2xs);
@@ -31,31 +31,31 @@
   color: #fff;
 }
 
-.footer__brand-wordmark {
+.nome-marca-rodape {
   height: 26px;
   width: auto;
   flex-shrink: 0;
 }
 
-.footer__brand p {
+.marca-rodape p {
   font-size: var(--fs-sm);
   max-width: 24rem;
   color: var(--color-muted-on-dark);
 }
 
-.footer__social {
+.redes-rodape {
   display: flex;
   gap: var(--space-2xs);
 }
 
-.footer__social a {
+.redes-rodape a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 
-.footer__col h4 {
+.coluna-rodape h4 {
   color: #fff;
   font-size: var(--fs-sm);
   text-transform: uppercase;
@@ -65,35 +65,35 @@
   margin-bottom: var(--space-sm);
 }
 
-.footer__col ul {
+.coluna-rodape ul {
   display: flex;
   flex-direction: column;
   gap: var(--space-2xs);
 }
 
-.footer__col a {
+.coluna-rodape a {
   font-size: var(--fs-sm);
   color: var(--color-muted-on-dark);
   transition: color var(--transition-fast);
 }
 
-.footer__col a:hover {
+.coluna-rodape a:hover {
   color: #fff;
 }
 
 
-.footer__col--center {
+.coluna-rodape-central {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.footer__col--center img {
+.coluna-rodape-central img {
   margin-top: var(--space-2xs);
 }
 
-.footer__bottom {
+.base-rodape {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: var(--space-md);
   display: flex;
@@ -105,16 +105,16 @@
 }
 
 @media (max-width: 900px) {
-  .footer__top {
+  .topo-rodape {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 560px) {
-  .footer__top {
+  .topo-rodape {
     grid-template-columns: 1fr;
   }
-  .footer__bottom {
+  .base-rodape {
     flex-direction: column;
     align-items: flex-start;
   }

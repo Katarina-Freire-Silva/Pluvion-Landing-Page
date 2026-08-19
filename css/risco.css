@@ -7,21 +7,21 @@
   text-align: center;
 }
 
-.risco .section-head {
+.risco .cabecalho-secao {
   align-items: center;
   text-align: center;
   margin-inline: auto;
   max-width: 40rem;
 }
 
-.risk-levels {
+.niveis-risco {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-sm);
   text-align: left;
 }
 
-.risk-card {
+.cartao-risco {
   border-radius: var(--radius-md);
   padding: var(--space-md);
   color: #fff;
@@ -32,16 +32,16 @@
   transition: transform var(--transition-base);
 }
 
-.risk-card:hover {
+.cartao-risco:hover {
   transform: translateY(-4px);
 }
 
-.risk-card--1 { background: var(--risk-1); }
-.risk-card--2 { background: var(--risk-2);   color: #fff; }
-.risk-card--3 { background: var(--risk-3); }
-.risk-card--4 { background: var(--risk-4); }
+.cartao-risco-1 { background: var(--risk-1); }
+.cartao-risco-2 { background: var(--risk-2);   color: #fff; }
+.cartao-risco-3 { background: var(--risk-3); }
+.cartao-risco-4 { background: var(--risk-4); }
 
-.risk-card__level {
+.nivel-cartao-risco {
   font-family: "Josefin Sans", sans-serif;
     color: #fff;
   font-size: 0.72rem;
@@ -50,7 +50,7 @@
   opacity: 0.85;
 }
 
-.risk-card__title {
+.titulo-cartao-risco {
   font-family: "Josefin Sans", sans-serif;
   color: #fff;
   font-size: var(--fs-lg);
@@ -58,25 +58,25 @@
   margin-block: var(--space-2xs);
 }
 
-.risk-card__desc {
+.descricao-cartao-risco {
   font-size: var(--fs-sm);
   color: #fff;
   opacity: 0.92;
 }
 
-.risk-card--2 .risk-card__desc,
-.risk-card--2 .risk-card__level {
+.cartao-risco-2 .descricao-cartao-risco,
+.cartao-risco-2 .nivel-cartao-risco {
   opacity: 0.75;
 }
 
 @media (max-width: 900px) {
-  .risk-levels {
+  .niveis-risco {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 560px) {
-  .risk-levels {
+  .niveis-risco {
     grid-template-columns: 1fr;
   }
 }
