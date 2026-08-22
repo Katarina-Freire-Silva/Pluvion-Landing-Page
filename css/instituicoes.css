@@ -101,7 +101,9 @@
   text-shadow: 0 0 14px rgba(226, 233, 236, 0.75);
 }
 
-
+option{
+  color: var(--color-text);
+}
 
 
 .grade-formulario-institucional {
